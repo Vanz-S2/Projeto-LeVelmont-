@@ -77,25 +77,142 @@
         </section>
         <!-----Fim da Promoção----->
 
+        <section class="site">
+            <div class="cardapioPromo">
 
-    
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/icon.png" alt="">
+
+                        </li>
+
+                        <li>
+                            <h3>Pizza</h3>
+                            <p>calabresa e cebola</p>
+                        </li>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/icon.png" alt="">
+
+                        </li>
+
+                        <li>
+                            <h3>Pizza</h3>
+                            <p>calabresa e cebola</p>
+                        </li>
+                </div>
+
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/icon.png" alt="">
+
+                        </li>
+
+                        <li>
+                            <h3>Pizza</h3>
+                            <p>calabresa e cebola</p>
+                        </li>
+                </div>
+
+
+            </div>
+
+            <div class="cardapioPromo">
+
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/icon.png" alt="">
+                        </li>
+                        <li>
+                            <h3>Pizza</h3>
+                            <p>calabresa e cebola</p>
+                        </li>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/icon.png" alt="">
+                        </li>
+                        <li>
+                            <h3>Pizza</h3>
+                            <p>calabresa e cebola</p>
+                        </li>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/icon.png" alt="">
+                        </li>
+                        <li>
+                            <h3>Pizza</h3>
+                            <p>calabresa e cebola</p>
+                        </li>
+                </div>
+
+            </div>
+
+            <div class="cardapioPromo">
+
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/icon.png" alt="">
+                        </li>
+                        <li>
+                            <h3>Pizza</h3>
+                            <p>calabresa e cebola</p>
+                        </li>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/icon.png" alt="">
+                        </li>
+                        <li>
+                            <h3>Pizza</h3>
+                            <p>calabresa e cebola</p>
+                        </li>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <img src="img/icon.png" alt="">
+                        </li>
+                        <li>
+                            <h3>Pizza</h3>
+                            <p>calabresa e cebola</p>
+                        </li>
+                </div>
+
+            </div>
+        </section>
+
 
     </main>
 
+   
 
 
-    <!--Começo do Rodape-->
-   <?php require_once("conteudo/rodape.php")?>
-    <!--Fim do Rodape-->
 
 
-    <script src="https://code.jquery.com/jquery-3.7.1.js"></script> <!--Biblioteca do JQUERY-->
+        <!--Começo do Rodape-->
+        <?php require_once("conteudo/rodape.php") ?>
+        <!--Fim do Rodape-->
 
-    <script src="js/slick.min.js"></script> <!--Livro da Biblioteca-->
-    <script src="js/lity.min.js"></script>
-    <script src="js/wow.min.js"></script>
 
-    <script src="js/animacao.js"></script> <!--Animações do java-->
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script> <!--Biblioteca do JQUERY-->
+
+        <script src="js/slick.min.js"></script> <!--Livro da Biblioteca-->
+        <script src="js/lity.min.js"></script>
+        <script src="js/wow.min.js"></script>
+
+        <script src="js/animacao.js"></script> <!--Animações do java-->
 
 
 

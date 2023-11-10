@@ -606,6 +606,32 @@ header img {
 }
 
 
+ 
+/*galeria de imagem pagina promoção*/
+ 
+ 
+.galeriaPromo {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    margin: 5%;
+    height: auto;
+}
+ 
+/**********Seção cardapio***********************/
+.cardapioPromo{
+    display: flex;
+    justify-content: space-around;
+}
+.cardapioPromo ul li{
+    list-style: none;
+}
+.cardapioPromo div ul {
+    display: flex;
+}
+/**********************/
+
+
 
 /* Nossa promo de imagem pagina promoção*/
 .sobrePromocao {
