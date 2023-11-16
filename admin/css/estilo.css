@@ -17,44 +17,7 @@ main {
 
 /*------------Começo do Topo---------*/
 
-.topo {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
 
-
-.topo h1 {
-    text-align: center;
-    width: 15%;
-
-}
-
-.topo h1 img {
-    width: 70%;
-    margin: 0 auto;
-}
-
-
-
-.topo h2,
-h4 {
-    color: #34495e;
-    text-transform: uppercase;
-    font-size: 1.8em;
-    padding: 38px;
-}
-
-
-.topo div {
-    display: flex;
-    align-items: center;
-    width: 15%;
-}
-
-.topo div img {
-    width: 30%;
-}
 
 /*------------Fim do Topo---------*/
 
@@ -69,11 +32,7 @@ h4 {
 }
 
 
-.conteudo {
-    background: #A60303;
-    width: 100%;
 
-}
 
 
 .table {
@@ -134,11 +93,21 @@ h4 {
 
 .menu {
     background: #A60303;
-
+    margin-right: 20px;
     max-width: 15%;
     width: 50%;
     text-align: center;
     padding: 15px 0px;
+    border-radius: 20px;
+    box-shadow: -13px 0px 10px 0px black;
+    border: solid 2px #000000;
+
+}
+
+
+.menu ul{
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 
@@ -169,6 +138,19 @@ h4 {
 }
 
 /*------------Fim do Menu---------*/
+
+/*------------Começo do Conteudo---------*/
+
+.conteudo{
+    background: #A60303;
+    width: 100%;
+    border-radius: 10px;
+    border: solid 2px #000000;
+
+}
+
+
+
 
 /*------------Começo do Rodape---------*/
 

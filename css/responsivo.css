@@ -255,10 +255,19 @@
 /*-----------------Você Sabia------------------*/
 
 
-
+.sabia div{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    margin: 25px 0px;
+}
 
 .sabia div div{
     width: 15%;
+    border: solid 2px #000000;
+    padding: 50px;
 
 }
 

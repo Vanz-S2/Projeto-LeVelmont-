@@ -51,7 +51,7 @@ $pagina = @$_GET['p'];
                         <li><a href="index.php?p=produtos"
                                 class="<?php echo ($pagina == 'produtos') ? 'menuAtivo' : ''; ?>">Produtos</a> </li>
                         <li><a href="index.php?p=vendas"
-                                class="<?php echo ($pagina == 'vendas') ? 'menuAtivo' : ''; ?>">Vendas de bagos</a></li>
+                                class="<?php echo ($pagina == 'vendas') ? 'menuAtivo' : ''; ?>">Vendas</a></li>
 
                         <li><a href="index.php?p=pagamentos"
                                 class="<?php echo ($pagina == 'pagamentos') ? 'menuAtivo' : ''; ?>">Pagamentos</a></li>

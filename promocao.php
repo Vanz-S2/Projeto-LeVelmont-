@@ -88,7 +88,7 @@
                         </li>
 
                         <li>
-                            <h3>Pizza</h3>
+                            <h3><?php echo  $linha ['nomeTeste']    ?></h3>
                             <p>calabresa e cebola</p>
                         </li>
                 </div>

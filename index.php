@@ -122,28 +122,28 @@
 
         <div class="fundoSobre">
 
-            
 
-                <div>
-                    <h2>Quem Somos</h2>
-                    <p>
-                        <b>Pizzaria Le Velmont
-                            criada para trazer a magia e qualidade para seus clientes
 
-                            Criada em 2021 traz um cardápio diverso para todos os paladares, trabalhando com
-                            ingredientes
-                            selecionados onde a qualidade e o amor e a nossa receita para ser a melhor da região! .</b>
-                    </p>
+            <div>
+                <h2>Quem Somos</h2>
+                <p>
+                    <b>Pizzaria Le Velmont
+                        criada para trazer a magia e qualidade para seus clientes
 
-                </div>
+                        Criada em 2021 traz um cardápio diverso para todos os paladares, trabalhando com
+                        ingredientes
+                        selecionados onde a qualidade e o amor e a nossa receita para ser a melhor da região! .</b>
+                </p>
 
-                <div>
+            </div>
 
-                    <img src="img/imagem/quem.jpg" alt="">
+            <div>
 
-                </div>
+                <img src="img/imagem/quem.jpg" alt="">
 
-            
+            </div>
+
+
 
         </div>
 
@@ -171,23 +171,41 @@
 
 
 
- <!--Começo da Você Sabia-->
+    <!--Começo da Você Sabia-->
     <section class="sabia">
-<h2>Você Sabia</h2>
-<div>
-        <div><img src="img/imagem/Novo Projeto.png" alt="">
-        <h3>Preparação da Massa</h3></div>
-        
-        <div><img src="img/imagem/Novo Projeto.png" alt="">
-        <h3>Pizza Vegetariana</h3></div>
+        <h2>Você Sabia</h2>
+        <div>
+            <div>
+                <a href="conteudo/molho.html" data-lity>
+                    <img src="img/imagem/massa.png" alt="">
+                    <h3>Preparação da Massa</h3>
+              
+                </a>
+            </div>
 
-        <div><img src="img/imagem/Novo Projeto.png" alt="">
-        <h3>Molho 100% natural</h3></div>
+            <div>
+                <a href="#inline" data-lity>
+                    <img src="img/imagem/vegetariana.png" alt="">
+                    <h3>Pizza Vegetariana</h3>
+                </a>
+            </div>
 
-        <div><img src="img/imagem/Novo Projeto.png" alt="">
-        <h3>Entregas seguras</h3></div>
+            <div>
+                <a href="#inline" data-lity>
+                    <img src="img/imagem/molho.png" alt="">
+                    <h3>Molho 100% natural</h3>
+                </a>
+            </div>
 
-        </div> 
+            <div>
+                <a href="#inline" data-lity>
+                    <img src="img/imagem/entrega.png" alt="">
+                    <h3>Entregas seguras</h3>
+                </a>
+            </div>
+
+
+        </div>
 
     </section>
     <!--Fim da Você Sabia-->
