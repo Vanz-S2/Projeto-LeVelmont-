@@ -39,7 +39,7 @@
                 <ul>
                     <li><a href="promocao.php">Promoções</a></li>
                     <li><a href="cardapio.php">Cardapio</a></li>
-                    <li><a href="#">Quem somos</a></li>
+                   
                     <li><a href="contato.php">Contato</a></li>
                 </ul>
                 <button>Login</button>
