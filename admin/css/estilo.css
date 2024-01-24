@@ -11,7 +11,8 @@ body {
 main {
     flex: 1;
     display: flex;
-    background: #f4a537;
+    background: #A60303;
+    background-image: url(https://www.transparenttextures.com/patterns/green-cup.png);
 
 }
 
@@ -22,6 +23,11 @@ main {
 /*------------Fim do Topo---------*/
 
 /*------------Começo da tabela---------*/
+   /*------------BootStrap-------*/
+
+   .table_responsive{
+    margin-bottom: 50px;
+}
 
 .tabela {
     display: flex;
@@ -32,15 +38,14 @@ main {
 }
 
 
-
-
-
 .table {
     border-color: #f1c40f !important;
     border-radius: 2px;
-    width: 50%;
+    width: 100%;
     text-align: center;
     margin: 0 auto;
+    margin-top: 15px;
+    
 }
 
 .tabela-titulo {
@@ -51,8 +56,8 @@ main {
 }
 
 .table thead th {
-    color: #ffc500;
-    background-color: #23475f;
+    color: #ffffff;
+    background-color: #4b4949f2;
 
 }
 
@@ -74,7 +79,7 @@ main {
     text-align: center;
     padding: 20px;
     font-size: 2em;
-    color: white;
+    color: black;
 
 }
 
@@ -82,25 +87,39 @@ main {
 
 
 .cadastrar {
+    display: flex;
     text-align: end;
-    font-size: 1.6em;
-    padding-right: 20%;
+    font-size: 1.4em;
+    padding-right: 15px;
+    flex-direction: row;
+    justify-content: flex-end;
+    color: #ffc107;
+    text-decoration-color: #ffc107;
 }
+
+.atualizar{
+    color: #198754;
+    text-decoration-color: #198754;
+}
+
+.desativar{
+    color: red;
+    text-decoration-color: red;
+}
+
 
 /*------------Fim da tabela---------*/
 
 /*------------Começo do Menu---------*/
 
 .menu {
-    background: #A60303;
     margin-right: 20px;
     max-width: 15%;
     width: 50%;
     text-align: center;
     padding: 15px 0px;
     border-radius: 20px;
-    box-shadow: -13px 0px 10px 0px black;
-    border: solid 2px #000000;
+    max-height: 724px;
 
 }
 
@@ -112,7 +131,8 @@ main {
 
 
 .menu li{
-    background: black;
+    background: #2f2c2cf2;
+    ;
     padding: 5px;
     border-radius: 15px;
     margin: 15px 0;
@@ -137,12 +157,17 @@ main {
     color: #f1c40f !important;
 }
 
+
+.menu a{
+    padding: 18px 0px
+}
 /*------------Fim do Menu---------*/
 
 /*------------Começo do Conteudo---------*/
 
 .conteudo{
-    background: #A60303;
+    background: #ffffff;
+    background-image: url(https://www.transparenttextures.com/patterns/concrete-wall.png);
     width: 100%;
     border-radius: 10px;
     border: solid 2px #000000;
@@ -211,16 +236,13 @@ h6 {
 
 
 .display-4 {
-    color: #ffc500;
+    color: #000000;
     text-align: center;
 }
 
 
 
-/*------------BootStrap-------*/
-.table_responsive{
-    margin-bottom: 50px;
-}
+
 
 
 /*------------Começo do Cadastro Exercicios---------*/
@@ -293,3 +315,21 @@ legend {
 }
 
 
+
+/* Dashboard */
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e3e3e3;
+    
+}
+
+
+.dashboard div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #e3e3e3;
+    margin-top: 35px;
+}

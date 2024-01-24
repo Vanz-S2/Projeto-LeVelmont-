@@ -47,18 +47,23 @@ $pagina = @$_GET['p'];
                                 class="<?php echo ($pagina == 'funcionario') ? 'menuAtivo' : ''; ?>">Funcionário</a>
                         </li>
                         <li><a href="index.php?p=cliente"
-                                class="<?php echo ($pagina == 'cliente') ? 'menuAtivo' : ''; ?>">Cliente</a></li>
+                                class="<?php echo ($pagina == 'cliente') ? 'menuAtivo' : ''; ?>">Cliente</a>
+                        </li>
                         <li><a href="index.php?p=produtos"
-                                class="<?php echo ($pagina == 'produtos') ? 'menuAtivo' : ''; ?>">Produtos</a> </li>
+                                class="<?php echo ($pagina == 'produtos') ? 'menuAtivo' : ''; ?>">Produtos</a>
+                         </li>
                         <li><a href="index.php?p=vendas"
-                                class="<?php echo ($pagina == 'vendas') ? 'menuAtivo' : ''; ?>">Vendas</a></li>
-
+                                class="<?php echo ($pagina == 'vendas') ? 'menuAtivo' : ''; ?>">Vendas</a>
+                        </li>
                         <li><a href="index.php?p=pagamentos"
-                                class="<?php echo ($pagina == 'pagamentos') ? 'menuAtivo' : ''; ?>">Pagamentos</a></li>
-                        <li><a href="index.php?p=contato"
-                                class="<?php echo ($pagina == 'contato') ? 'menuAtivo' : ''; ?>">E-mail</a></li>
+                                class="<?php echo ($pagina == 'pagamentos') ? 'menuAtivo' : ''; ?>">Pagamentos</a>
+                        </li>
+                        <li><a href="index.php?p=itens"
+                                class="<?php echo ($pagina == 'itens') ? 'menuAtivo' : ''; ?>">Itens Vendas</a>
+                        </li>
                         <li><a href="index.php?p=ajuda"
-                                class="<?php echo ($pagina == 'ajuda') ? 'menuAtivo' : ''; ?>">Ajuda e Suporte</a></li>
+                                class="<?php echo ($pagina == 'ajuda') ? 'menuAtivo' : ''; ?>">Ajuda e Suporte</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -76,8 +81,8 @@ $pagina = @$_GET['p'];
                             echo 'pg ajuda';
                             break;
 
-                        case 'contato':
-                            require_once('contato/contato.php');
+                        case 'itens':
+                            echo 'pg itens';
                             break;
 
                         case 'relatorios':
@@ -103,16 +108,16 @@ $pagina = @$_GET['p'];
 
 
                         case 'funcionario':
-                            echo 'pg funcionario';
+                            require_once('funcionario/funcionario.php');
                             break;
 
                         case 'dashboard':
-                            echo 'pg dashboard';
+                            require_once('dashboard/dashboard.php');
                             break;
 
 
                         default:
-                            echo 'pg dashboard';
+                        require_once('dashboard/dashboard.php');
                             break;
                     }
 

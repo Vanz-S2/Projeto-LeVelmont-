@@ -862,47 +862,45 @@ header img {
 
 .menu-item-image {
     border-radius: 50%;
-    width: 100px;
-    height: 100px;
+    width: 80px; /* Reduzindo o tamanho das imagens das pizzas */
+    height: 80px; /* Reduzindo o tamanho das imagens das pizzas */
     object-fit: cover;
-    margin-right: 10px;
+    margin-right: 5px; /* Reduzindo a margem entre as imagens */
 }
-
-
-/* Adicione estilo para as colunas */
+ 
 .menu-columns {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
-
+ 
 .menu-column {
-    flex-basis: calc(50% - 10px);
-    /* 50% da largura com espaço entre as colunas */
-    margin-bottom: 20px;
+    flex-basis: calc(20% - 5px); /* Ajustando a largura das colunas */
+    margin-bottom: 8px; /* Reduzindo a margem entre as colunas */
 }
-
+ 
 .menu-title {
     font-weight: bold;
-    font-size: 2em;
-    margin-top: 50px;
-
+    font-size: 30px;
 }
-
-.menu-item h4 {
-    font-weight: bold;
-
-}
-
-
+ 
 .menu-item h3 {
     font-weight: bold;
     margin-bottom: 10px;
-    /* Feito um ajuste no valor conforme necessário */
 }
-
-/* Foi adicionado espaço entre a descrição e o valor */
+ 
 .menu-item-details p {
-    margin-bottom: 25px;
-    /* Feito um ajuste no valor conforme necessário */
+    margin-bottom: 30px; /* Reduzindo o espaçamento entre os detalhes dos itens */
 }
+ 
+.menu-item-price {
+    font-size: 18px;
+    color: #ec1010;
+    font-weight: bold;
+}
+ 
+/* FIM CARDAPIO */
+ 
+/* ... Seções posteriores permanecem inalteradas ... */
+ 
+/* FIM CARDAPIO */

@@ -155,6 +155,7 @@ if (isset($_POST['email'])) {
     <section class="contato">
 
             <div class="site">
+                 <!--Faça seu Pedido -->
                 <h2>Contato</h2>
 
 
@@ -178,7 +179,8 @@ if (isset($_POST['email'])) {
                                 <input type="text" name="nome" id="nome" placeholder=" *Informe seu nome:" required>
                             </div>
                             <div>
-                                <label for="email">E-mail:</label>
+                                 <!--Endereço-->
+                                <label for="email">:</label>
                                 <input type="email" name="email" id="email" placeholder="*Informe o seu E-mail:" required>
                             </div>
                             <div>
@@ -186,17 +188,19 @@ if (isset($_POST['email'])) {
                                 <input type="tel" name="fone" id="fone" placeholder="*Infome seu Telefone:">
                             </div>
 
+
                         </div>
 
                         <div>
 
                             <div>
+                                 <!--Seu Pedido-->
                                 <label for="mens">Mensagem:</label>
                                 <textarea name="mens" id="mens" cols="30" rows="10"></textarea>
                             </div>
 
                             <div class="btnContato">
-                                <input type="submit" value="Enviar por e-mail">
+                                <input type="submit" value="Enviar por e-mail">  <!--butao limpar  -->
                                 <input type="button" value="Enviar po WhatsApp" ondblclick= "enviarWhats()">
                             </div>
                         </div>

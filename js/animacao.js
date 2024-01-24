@@ -125,6 +125,8 @@ function showMenu(menuId) {
   const menuName = document.getElementById("menu-name");
   const menuItems = document.getElementById("menu-items");
 
+
+
   const menus = [
     {
       name: "Grandes",
@@ -171,16 +173,145 @@ function showMenu(menuId) {
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
+        {
+          name: "Pizza de Calabresa",
+          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza de Calabresa",
+          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
 
 
+        {
+          name: "Pizza de Calabresa",
+          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        {
+          name: "Pizza de Calabresa",
+          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza de Calabresa",
+          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
 
 
+        {
+          name: "Pizza de Calabresa",
+          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
 
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        {
+          name: "Pizza de Calabresa",
+          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza de Calabresa",
+          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+
+        {
+          name: "Pizza de Calabresa",
+          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
 
 
         // Adicione mais 9 itens com nome, descrição, preço e imagem
       ],
     },
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+
+
     {
       name: "Médias",
       items: [
@@ -212,17 +343,121 @@ function showMenu(menuId) {
           image: "img/imagem/pizza-2.jpg",
         },
 
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
 
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
 
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
 
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
 
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
 
 
         // Adicione mais 9 itens com nome, descrição, preço e imagem
       ],
     },
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     {
       name: "Broto",
@@ -254,9 +489,156 @@ function showMenu(menuId) {
           price: "$35.00",
           image: "img/imagem/pizza-1.jpg",
         },
+        
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+
+        {
+          name: "Pizza de Frango",
+          description: "Molho de tomate, frango desfiado, milho, catupiry.",
+          price: "$35.00",
+          image: "img/imagem/pizza-1.jpg",
+        },
+        
         // SEGUIR O MESMO PADRÃO PARA ADICIONAR NOVOS PRODUTOS
       ],
     },
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
     {
       name: "Esfihas",
       items: [
@@ -292,6 +674,35 @@ function showMenu(menuId) {
           price: "$3.00",
           image: "img/imagem/esfihaqueijo.jpg",
         },
+        {
+          name: "Esfiha de Carne",
+          description: "Carne moída temperada com especiarias, cebola, e limão.",
+          price: "$3.50",
+          image: "img/imagem/esfiha2.jpg",
+        },
+
+        {
+          name: "Esfiha de Calabresa",
+          description: "Carne moída temperada com especiarias, cebola, e limão.",
+          price: "$3.00",
+          image: "img/imagem/esfihacalabresa.jpg",
+        },
+
+
+        {
+          name: "Esfiha de Frango",
+          description: "Carne moída temperada com especiarias, cebola, e limão.",
+          price: "$3.00",
+          image: "img/imagem/esfihafrango.jpg",
+        },
+
+
+        {
+          name: "Esfiha de Frango",
+          description: "Carne moída temperada com especiarias, cebola, e limão.",
+          price: "$3.00",
+          image: "img/imagem/esfihaqueijo.jpg",
+        },
 
 
 
@@ -300,9 +711,39 @@ function showMenu(menuId) {
         // SEGUIR O MESMO PADRÃO PARA ADICIONAR NOVOS PRODUTOS
       ],
     },
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
     {
       name: "Bebidas",
       items: [
+        {
+          name: "Coca-Cola",
+          description: "Lata 350ml.",
+          price: "$6.99",
+          image: "img/imagem/coca1.jpg",
+        },
+
+        {
+          name: "Sprite",
+          description: "Lata 350ml.",
+          price: "$5.99",
+          image: "img/imagem/sprite.jpg",
+        },
+
+        {
+          name: "Fanta Uva",
+          description: "Lata 350ml.",
+          price: "$4.99",
+          image: "img/imagem/fantauva.jpg",
+        },
+
+        {
+          name: "Guarana",
+          description: "Lata 350ml.",
+          price: "$5.99",
+          image: "img/imagem/guarana.jpg",
+        },
         {
           name: "Coca-Cola",
           description: "Lata 350ml.",
@@ -337,6 +778,79 @@ function showMenu(menuId) {
         // SEGUIR O MESMO PADRÃO PARA ADICIONAR NOVOS PRODUTOS
       ],
     },
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+    {
+      name: "Calzone",
+      items: [
+        {
+          name: "Calzone de Presunto e Queijo",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/calzone.jpg",
+        },
+
+        {
+          name: "Calzone",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/calzone.jpg",
+        },
+
+        {
+          name: "Calzone",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/calzone.jpg",
+        },
+
+        {
+          name: "Calzone",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/calzone.jpg",
+        },
+
+        {
+          name: "Calzone de Presunto e Queijo",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/calzone.jpg",
+        },
+
+        {
+          name: "Calzone",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/calzone.jpg",
+        },
+
+        {
+          name: "Calzone",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/calzone.jpg",
+        },
+
+        {
+          name: "Calzone",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/calzone.jpg",
+        },
+
+
+        // Adicione mais 9 itens com nome, descrição, preço e imagem
+      ],
+    },
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
   ];
 
 

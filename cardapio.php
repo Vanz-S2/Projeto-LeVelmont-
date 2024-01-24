@@ -66,6 +66,7 @@
             <button class="menu-button" onclick="showMenu(3)">Broto</button>
             <button class="menu-button" onclick="showMenu(4)">Esfihas</button>
             <button class="menu-button" onclick="showMenu(5)">Bebidas</button>
+            <button class="menu-button" onclick="showMenu(6)">Calzone</button>
         </div>
         <div id="menu-details">
             <h4 id="menu-name" class="menu-title"></h4>
