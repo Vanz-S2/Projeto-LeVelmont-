@@ -1,10 +1,10 @@
 
 
 document.getElementById('imgFoto').addEventListener('click', function () {
-  document.getElementById('fotoExercicio').click();
+  document.getElementById('fotoProduto').click();
 });
 
-document.getElementById('fotoExercicio').addEventListener('change', function (e) {
+document.getElementById('fotoProduto').addEventListener('change', function (e) {
 
   let imgFoto = document.getElementById('imgFoto');
   let arquivo = e.target.files[0];
@@ -32,4 +32,16 @@ function confirmarDesativacao() {
 
   // Retorna true se o usuário clicou em "OK", caso contrário, retorna false
   return confirmacao;
+}
+
+
+function confirmar() {
+    let resultado = confirm("Todas as informações foram inseridas?");
+    if (resultado == true) {
+        // Código a ser executado se o usuário clicar em OK
+        console.log('Usuário confirmou');
+    } else {
+        // Código a ser executado se o usuário clicar em Cancelar
+        console.log('Usuário cancelou');
+    }
 }

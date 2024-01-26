@@ -240,7 +240,9 @@ h6 {
     text-align: center;
 }
 
-
+.input-group{
+    width: 28%;
+}
 
 
 
@@ -256,10 +258,18 @@ h6 {
 }
 
 
+.foto-produto{
+    width: 16%;
+    height: 70%;
+    position: absolute;
+}
+
+
 .formulario-exercicio label,
 legend {
     font-weight: bold;
     text-transform: uppercase;
+   
 }
 
 .formulario-exercicio input {

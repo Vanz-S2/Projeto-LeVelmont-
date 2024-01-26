@@ -49,8 +49,8 @@ $pagina = @$_GET['p'];
                         <li><a href="index.php?p=cliente"
                                 class="<?php echo ($pagina == 'cliente') ? 'menuAtivo' : ''; ?>">Cliente</a>
                         </li>
-                        <li><a href="index.php?p=produtos"
-                                class="<?php echo ($pagina == 'produtos') ? 'menuAtivo' : ''; ?>">Produtos</a>
+                        <li><a href="index.php?p=produto"
+                                class="<?php echo ($pagina == 'produto') ? 'menuAtivo' : ''; ?>">Produtos</a>
                          </li>
                         <li><a href="index.php?p=vendas"
                                 class="<?php echo ($pagina == 'vendas') ? 'menuAtivo' : ''; ?>">Vendas</a>
@@ -98,8 +98,8 @@ $pagina = @$_GET['p'];
                             echo 'pg vendas';
                             break;
 
-                        case 'produtos':
-                            echo 'pg produtos';
+                        case 'produto':
+                            require_once("produto/produto.php");
                             break;
 
                         case 'cliente':

@@ -2,7 +2,7 @@
 
 if (isset($_POST['nomeFuncionario'])) {
 
-    $nomeFuncionario = $_POST['nomeExercicio'];
+    $nomeFuncionario = $_POST['nomeFuncionario'];
     $dataNascFuncionario = $_POST['dataNascFuncionario'];
     $cpfFuncionario = $_POST['cpfFuncionario'];
     $telefoneFuncionario = $_POST['telefoneFuncionario'];
@@ -31,7 +31,35 @@ if (isset($_POST['nomeFuncionario'])) {
 }
 
 
+
+
+
+
+// Verifique se o nome foi definido
+if (empty($_POST["nomeFuncionario"])) {
+    $nomeFuncionario = "O nome é obrigatório";
+} else {
+    $nomeFuncionario = test_input($_POST["nomeFuncionario"]);
+    // Verifique se o nome contém apenas letras e espaços
+    if (!preg_match("/^[a-zA-Z ]*$/", $nomeFuncionario)) {
+        $nomeFuncionario = "Apenas letras e espaços são permitidos";
+    }
+}
+
+function test_input($data) {
+    $data = trim($data);
+    $data = stripslashes($data);
+    $data = htmlspecialchars($data);
+    return $data;
+}
+
 ?>
+
+
+
+
+
+
 
 
 <h2 class="display-4">Cadastrar Funcionário</h2>
@@ -46,36 +74,37 @@ if (isset($_POST['nomeFuncionario'])) {
 
     <div class="nome-exercicio">
         <div class="mb-3">
-            <label for="nomeFuncionario" class="form-label">Nome:</label>
-            <input type="text" class="form-control" name="nomeFuncionario" id="nomeFuncionario" placeholder="Nome do Funcionário">
+            <label for="nomeFuncionario" class="form-label" >Nome:</label>
+            <input type="text" class="form-control" name="nomeFuncionario" id="nomeFuncionario" placeholder="Nome do Funcionário" required>
+
         </div>
 
 
         <div class="mb-3">
             <label for="emailFuncionario" class="form-label">E-mail:</label>
-            <input type="text" class="form-control" name="emailFuncionario" id="emailFuncionario" placeholder="E-mail do Funcionário">
+            <input type="text" class="form-control" name="emailFuncionario" id="emailFuncionario" placeholder="E-mail do Funcionário" required>
         </div>
 
 
         <div class="mb-3">
             <label for="telefoneFuncionario" class="form-label">Telefone:</label>
-            <input type="text" class="form-control" name="telefoneFuncionario" id="telefoneFuncionario" placeholder="Telefone do Funcionário">
+            <input type="text" class="form-control" name="telefoneFuncionario" id="telefoneFuncionario" placeholder="Telefone do Funcionário" required>
         </div>
 
 
         <div class="mb-3">
             <label for="cpfFuncionario" class="form-label">CPF:</label>
-            <input type="text" class="form-control" name="cpfFuncionario" id="cpfFuncionario" placeholder="CPF do Funcionário">
+            <input type="text" class="form-control" name="cpfFuncionario" id="cpfFuncionario" placeholder="CPF do Funcionário" required>
         </div>
 
-        
+
 
         <div class="row">
 
 
             <div class="mb-3">
                 <label for="dataNascFuncionario">Data de nascimento:</label><br>
-                <input type="date" class="form-control" id="dataNascFuncionario" name="dataNascFuncionario"><br>
+                <input type="date" class="form-control" id="dataNascFuncionario" name="dataNascFuncionário" required>
             </div>
 
 
@@ -130,7 +159,7 @@ if (isset($_POST['nomeFuncionario'])) {
                 <div class="col-sm-10">
                     <legend class="col-form-label col-sm-2 pt-0">Status</legend>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario" value="ATIVO" checked>
+                        <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario" value="ATIVO" required>
                         <label class="form-check-label">
                             ATIVO
                         </label>
@@ -150,7 +179,7 @@ if (isset($_POST['nomeFuncionario'])) {
 
 
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Cadastrar Funciónario</button>
+                <button type="submit" class="btn btn-primary" onclick="confirmar()">Cadastrar Funciónario</button>
             </div>
 
 
