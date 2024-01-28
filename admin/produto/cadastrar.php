@@ -111,18 +111,17 @@ if (isset($_POST['nomeProduto'])) {
                     <option value="Bebida">Bebida</option>
                 </select>
 
-            </div> 
+            </div>
 
 
             <div class="mb-3">
                 <label for="precoProduto">Preço do Produto:</label>
-                <input type="text" class="form-control" name="precoProduto" id="precoProduto" 
-                onkeyup="adicionarReal();" onkeypress="isNumber(event);" onkeypress="proibirLetras(event);" placeholder="R$00,00" required>
-
+                <input type="text" class="form-control" name="precoProduto" id="precoProduto" onkeyup="adicionarReal();" onkeypress="isNumber(event);" onkeypress="proibirLetras(event);" placeholder="R$00,00" required>
             </div>
 
 
-            
+
+
 
 
 
@@ -138,9 +137,9 @@ if (isset($_POST['nomeProduto'])) {
 
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="statusProduto" id="statusProduto" value="DESATIVO">
+                        <input class="form-check-input" type="radio" name="statusProduto" id="statusProduto" value="DESATIVADO">
                         <label class="form-check-label">
-                            DESATIVO
+                        DESATIVADO
                         </label>
                     </div>
 

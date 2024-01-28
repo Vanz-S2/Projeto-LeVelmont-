@@ -135,7 +135,7 @@ if (isset($_POST['nomeProduto'])) {
                     <div class="col-sm-10">
                         <legend class="col-form-label col-sm-2 pt-0">Status</legend>
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="statusProduto" id="statusProduto">
+                            <input class="form-check-input" type="radio" name="statusProduto" id="statusProduto" value="ATIVO">
                             <label class="form-check-label">
                                 ATIVO
                             </label>
@@ -143,9 +143,9 @@ if (isset($_POST['nomeProduto'])) {
 
 
                         <div class="form-check">
-                            <input class="form-check-input" type="radio" name="statusProduto" id="statusProduto">
+                            <input class="form-check-input" type="radio" name="statusProduto" id="statusProduto" value="DESATIVADO">
                             <label class="form-check-label">
-                                DESATIVO
+                            DESATIVADO
                             </label>
                         </div>
 
@@ -155,7 +155,7 @@ if (isset($_POST['nomeProduto'])) {
 
 
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary" onclick="confirmar()">Cadastrar Produto</button>
+                    <button type="submit" class="btn btn-primary" onclick="confirmar()">Atualizar Produto</button>
                 </div>
 
 

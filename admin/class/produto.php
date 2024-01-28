@@ -6,7 +6,7 @@ class ProdutoClass
 
     // Atributos da Class
 
-    public $idProduto ;
+    public $idProduto;
     public $nomeProduto;
     public $tipoProduto;
     public $precoProduto;
@@ -14,7 +14,7 @@ class ProdutoClass
     public $descricaoProduto;
     public $fotoProduto;
     public $categoriaProduto;
-    
+
 
 
     //Metodo da Class
@@ -34,7 +34,7 @@ class ProdutoClass
     public function Carregar()
     {
         $query = "SELECT * FROM tblproduto WHERE idProduto = " . $this->idProduto;
-        
+
         $conn = Conexao::LigarConexao();
         $resultado = $conn->query($query);
         $lista = $resultado->fetchAll();
@@ -47,22 +47,24 @@ class ProdutoClass
             $this->descricaoProduto = $linha["descricaoProduto"];
             $this->fotoProduto = $linha["fotoProduto"];
             $this->categoriaProduto = $linha["categoriaProduto"];
-
         }
-
-
     }
 
 
     //Listar
+   
+
     public function Listar()
     {
-        $sql = "SELECT * FROM tblproduto WHERE  statusProduto = 'ATIVO' ORDER BY idProduto ASC";
+        $sql = "SELECT * FROM tblproduto ORDER BY idProduto ASC";
         $conn = Conexao::LigarConexao();
         $resultado = $conn->query($sql);
         $lista = $resultado->fetchAll();
         return $lista;
     }
+
+
+
 
 
     //Cadastrar
@@ -89,10 +91,11 @@ class ProdutoClass
         echo "<script>document.location='index.php?p=produto'</script>";
     }
 
-    public function desativar(){
-        
-        $query = "UPDATE tblproduto SET statusProduto ='DESATIVO' WHERE idProduto = " . $this->idProduto;
-        
+    public function desativar()
+    {
+
+        $query = "UPDATE tblproduto SET statusProduto ='DESATIVADO' WHERE idProduto = " . $this->idProduto;
+
         $conn = Conexao::LigarConexao();
         $conn->exec($query);
     }

@@ -103,7 +103,7 @@ $pagina = @$_GET['p'];
                             break;
 
                         case 'cliente':
-                            require_once('aluno/aluno.php');
+                            require_once('cliente/cliente.php');
                             break;
 
 

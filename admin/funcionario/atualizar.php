@@ -145,7 +145,7 @@ if (isset($_POST['nomeFuncionario'])) {
                 <div class="col-sm-10">
                     <legend class="col-form-label col-sm-2 pt-0">Status</legend>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario">
+                        <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario" value="ATIVO">
                         <label class="form-check-label">
                             ATIVO
                         </label>
@@ -157,9 +157,9 @@ if (isset($_POST['nomeFuncionario'])) {
 
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario">
+                        <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario" value="DESATIVADO">
                         <label class="form-check-label">
-                            DESATIVO
+                        DESATIVADO
                         </label>
                     </div>
 

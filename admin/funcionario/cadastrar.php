@@ -89,7 +89,11 @@ function test_input($data) {
         <div class="mb-3">
             <label for="telefoneFuncionario" class="form-label">Telefone:</label>
             <input type="text" class="form-control" name="telefoneFuncionario" id="telefoneFuncionario" placeholder="Telefone do Funcionário" required>
+
         </div>
+
+         
+    
 
 
         <div class="mb-3">
@@ -167,9 +171,9 @@ function test_input($data) {
 
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario" value="DESATIVO">
+                        <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario" value="DESATIVADO">
                         <label class="form-check-label">
-                            DESATIVO
+                        DESATIVADO
                         </label>
                     </div>
 
