@@ -81,7 +81,7 @@ class ProdutoClass
                                '" . $this->statusProduto . "',
                                 '" . $this->descricaoProduto . "', 
                                 '" . $this->fotoProduto . "',
-                                 '" . $this->categoriaProduto . "',";
+                                 '" . $this->categoriaProduto . "')";
 
         $conn = Conexao::LigarConexao();
         $conn->exec($query);

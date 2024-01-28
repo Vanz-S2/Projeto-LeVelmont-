@@ -97,24 +97,32 @@ if (isset($_POST['nomeProduto'])) {
                 <input type="text" class="form-control" name="descricaoProduto" id="descricaoProduto" placeholder="Descrição do Produto" required>
             </div>
 
-            <!-- <div class="mb-3">
+
+
+
+            <div class="mb-3">
                 <label for="categoriaProduto" class="form-label">Categoria:</label>
 
                 <select class="form-select col-sm-2" aria-label="Default select example" name="categoriaProduto" required>
                     <option selected="">Selecione a categoria do produto</option>
-                    <option value="Noite">Pequena</option>
-                    <option value="Madrugada"></option>
-                    <option value="Noite/Madrugada">Noite/Madrugada</option>
+                    <option value="Broto">Broto</option>
+                    <option value="Grande">Grande</option>
+                    <option value="Doce">Doce</option>
+                    <option value="Bebida">Bebida</option>
                 </select>
 
-            </div> -->
+            </div> 
 
 
+            <div class="mb-3">
+                <label for="precoProduto">Preço do Produto:</label>
+                <input type="text" class="form-control" name="precoProduto" id="precoProduto" 
+                onkeyup="adicionarReal();" onkeypress="isNumber(event);" onkeypress="proibirLetras(event);" placeholder="R$00,00" required>
+
+            </div>
 
 
-
-
-
+            
 
 
 

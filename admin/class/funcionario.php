@@ -35,7 +35,7 @@ class FuncionarioClass
     public function Carregar()
     {
         $query = "SELECT * FROM tblfuncionario WHERE idFuncionario = " . $this->idFuncionario;
-        
+
         $conn = Conexao::LigarConexao();
         $resultado = $conn->query($query);
         $lista = $resultado->fetchAll();
@@ -50,10 +50,7 @@ class FuncionarioClass
             $this->funcaoFuncionario = $linha["funcaoFuncionario"];
             $this->acessoFuncionario = $linha["acessoFuncionario"];
             $this->statusFuncionario = $linha["statusFuncionario"];
-
         }
-
-
     }
 
 
@@ -96,10 +93,36 @@ class FuncionarioClass
         echo "<script>document.location='index.php?p=funcionario'</script>";
     }
 
-    public function desativar(){
-        
+
+    //Atualizar
+    public function Atualizar()
+    {
+        $query = "UPDATE tblfuncionario
+                  SET nomeFuncionario ='" . $this->nomeFuncionario . "',
+                     dataNascFuncionario='" . $this->dataNascFuncionario . "',
+                     cpfFuncionario='" . $this->cpfFuncionario . "',
+                     telefoneFuncionario='" . $this->telefoneFuncionario . "',
+                     emailFuncionario='" . $this->emailFuncionario . "',
+                     turnoFuncionario='" . $this->turnoFuncionario . "',
+                     funcaoFuncionario='" . $this->funcaoFuncionario . "',
+                     acessoFuncionario='" . $this->acessoFuncionario . "',
+                     statusFuncionario='" . $this->statusFuncionario . "' 
+                  WHERE idFuncionario = '" . $this->idFuncionario . "'";
+    
+        $conn = Conexao::LigarConexao();
+        $conn->exec($query);
+    
+        echo "<script>document.location='index.php?p=funcionario'</script>";
+    }
+    
+
+
+
+    public function desativar()
+    {
+
         $query = "UPDATE tblfuncionario SET statusFuncionario ='DESATIVO' WHERE idFuncionario = " . $this->idFuncionario;
-        
+
         $conn = Conexao::LigarConexao();
         $conn->exec($query);
     }

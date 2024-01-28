@@ -108,6 +108,15 @@ main {
 }
 
 
+.pesquisa{
+    display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+  margin-right: 27%;
+  margin-left: 20%;
+}
+
+
 /*------------Fim da tabela---------*/
 
 /*------------Começo do Menu---------*/
@@ -343,3 +352,6 @@ legend {
     background: #e3e3e3;
     margin-top: 35px;
 }
+
+
+

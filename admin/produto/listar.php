@@ -22,27 +22,58 @@ $lista = $produto->Listar();
 
 
     <div class="cadastrar">
-    <a class="icon-link icon-link-hover cadastrar" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="index.php?p=produto&po=cadastrar">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wrench-adjustable" viewBox="0 0 16 16">
-            <path d="M16 4.5a4.492 4.492 0 0 1-1.703 3.526L13 5l2.959-1.11c.027.2.041.403.041.61Z" />
-            <path d="M11.5 9c.653 0 1.273-.139 1.833-.39L12 5.5 11 3l3.826-1.53A4.5 4.5 0 0 0 7.29 6.092l-6.116 5.096a2.583 2.583 0 1 0 3.638 3.638L9.908 8.71A4.49 4.49 0 0 0 11.5 9Zm-1.292-4.361-.596.893.809-.27a.25.25 0 0 1 .287.377l-.596.893.809-.27.158.475-1.5.5a.25.25 0 0 1-.287-.376l.596-.893-.809.27a.25.25 0 0 1-.287-.377l.596-.893-.809.27-.158-.475 1.5-.5a.25.25 0 0 1 .287.376ZM3 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
-        </svg>
-        Novo Produto
-    </a>
+        <a class="icon-link icon-link-hover cadastrar" style="--bs-icon-link-transform: translate3d(0, -.125rem, 0);" href="index.php?p=produto&po=cadastrar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-wrench-adjustable" viewBox="0 0 16 16">
+                <path d="M16 4.5a4.492 4.492 0 0 1-1.703 3.526L13 5l2.959-1.11c.027.2.041.403.041.61Z" />
+                <path d="M11.5 9c.653 0 1.273-.139 1.833-.39L12 5.5 11 3l3.826-1.53A4.5 4.5 0 0 0 7.29 6.092l-6.116 5.096a2.583 2.583 0 1 0 3.638 3.638L9.908 8.71A4.49 4.49 0 0 0 11.5 9Zm-1.292-4.361-.596.893.809-.27a.25.25 0 0 1 .287.377l-.596.893.809-.27.158.475-1.5.5a.25.25 0 0 1-.287-.376l.596-.893-.809.27a.25.25 0 0 1-.287-.377l.596-.893-.809.27-.158-.475 1.5-.5a.25.25 0 0 1 .287.376ZM3 14a1 1 0 1 1 0-2 1 1 0 0 1 0 2Z" />
+            </svg>
+            Novo Produto
+        </a>
     </div>
 
-    <table class="table table-bordered border-primary table-striped">
+    <div class="pesquisa">
+        <div>
+            <input type="text" id="pesquisa" placeholder="Digite para pesquisar...">
+            <button type="submit" class="btn btn-primary" onclick="filtrarTabela()"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg> </button>
+        </div>
+
+        <select id="tipoProduto" onchange="filtrarTabela()">
+            <option value="">Selecione o Tipo</option>
+            <option value="Pizza">Pizza</option>
+            <option value="Esfirra">Esfirra</option>
+            <option value="Calzone">Calzone</option>
+            <option value="Bebida">Bebida</option>
+        </select>
+
+        <select class="categoriaProduto" id="categoriaProduto" onchange="filtrarTabela()">
+            <option value="">Selecione a Categoria</option>
+            <option value="Broto">Broto</option>
+            <option value="Grande">Grande</option>
+            <option value="Doce">Doce</option>
+            <option value="Bebida">Bebida</option>
+        </select>
+
+
+
+
+    </div>
+
+    <table id="tabela" class="table table-bordered border-primary table-striped">
+
+
         <thead>
             <tr class="tabela-titulo">
                 <th>ID</th>
                 <th>Foto</th>
                 <th>Nome</th>
                 <th>Tipo</th>
-                <!--  <th>Categoria</th>  -->
+                <th>Categoria</th>
                 <th>Descrição</th>
                 <th>Preço</th>
                 <th>Status</th>
-                <th>Atualizar</th>  
+                <th>Atualizar</th>
                 <th>Desativar</th>
             </tr>
         </thead>
@@ -52,17 +83,29 @@ $lista = $produto->Listar();
             <?php foreach ($lista as $linha) : ?>
 
                 <tr>
-                
+
                     <td>
                         <?php echo $linha['idProduto'] ?>
                     </td>
-                    
+
+                    <td>
+                        <img src="../img/<?php echo $linha['fotoProduto'] ?>" alt="<?php echo $linha['nomeProduto'] ?>">
+                    </td>
+
                     <td>
                         <?php echo $linha['nomeProduto'] ?>
                     </td>
 
                     <td>
                         <?php echo $linha['tipoProduto'] ?>
+                    </td>
+
+                    <td>
+                        <?php echo $linha['categoriaProduto'] ?>
+                    </td>
+
+                    <td>
+                        <?php echo $linha['descricaoProduto'] ?>
                     </td>
 
                     <td>
@@ -73,17 +116,9 @@ $lista = $produto->Listar();
                         <?php echo $linha['statusProduto'] ?>
                     </td>
 
-                    <td>
-                        <?php echo $linha['descricaoProduto'] ?>
-                    </td>
 
-                    <td>
-                        <?php echo $linha['fotoProduto'] ?>
-                    </td>
 
-                    <td>
-                        <?php echo $linha['categoriaProduto'] ?>
-                    </td>
+
 
 
                     <td>

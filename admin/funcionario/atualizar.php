@@ -33,7 +33,7 @@ if (isset($_POST['nomeFuncionario'])) {
     $funcionario->acessoFuncionario = $acessoFuncionario;
     $funcionario->statusFuncionario = $statusFuncionario;
 
-    $funcionario->Cadastrar();
+    $funcionario->Atualizar();
 }
 
 
@@ -145,9 +145,7 @@ if (isset($_POST['nomeFuncionario'])) {
                 <div class="col-sm-10">
                     <legend class="col-form-label col-sm-2 pt-0">Status</legend>
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario" <?php
-                         if ($funcionario->statusFuncionario == 'ATIVO') {
-                         echo 'checked'; }?>>
+                        <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario">
                         <label class="form-check-label">
                             ATIVO
                         </label>
@@ -159,9 +157,7 @@ if (isset($_POST['nomeFuncionario'])) {
 
 
                     <div class="form-check">
-                        <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario" <?php
-                        if ($funcionario->statusFuncionario == 'DESATIVO') {
-                        echo 'checked'; } ?>>
+                        <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario">
                         <label class="form-check-label">
                             DESATIVO
                         </label>
