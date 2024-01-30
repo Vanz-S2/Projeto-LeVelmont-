@@ -116,7 +116,7 @@ if (isset($_POST['nomeProduto'])) {
 
             <div class="mb-3">
                 <label for="precoProduto">Preço do Produto:</label>
-                <input type="text" class="form-control" name="precoProduto" id="precoProduto" onkeyup="adicionarReal();" onkeypress="isNumber(event);" onkeypress="proibirLetras(event);" placeholder="R$00,00" required>
+                <input type="text" class="form-control" name="precoProduto" id="precoProduto"  onkeypress="isNumber(event);" onkeypress="proibirLetras(event);" placeholder="R$00,00" required>
             </div>
 
 

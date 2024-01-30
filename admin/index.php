@@ -58,9 +58,6 @@ $pagina = @$_GET['p'];
                         <li><a href="index.php?p=pagamentos"
                                 class="<?php echo ($pagina == 'pagamentos') ? 'menuAtivo' : ''; ?>">Pagamentos</a>
                         </li>
-                        <li><a href="index.php?p=itens"
-                                class="<?php echo ($pagina == 'itens') ? 'menuAtivo' : ''; ?>">Itens Vendas</a>
-                        </li>
                         <li><a href="index.php?p=ajuda"
                                 class="<?php echo ($pagina == 'ajuda') ? 'menuAtivo' : ''; ?>">Ajuda e Suporte</a>
                         </li>
@@ -79,10 +76,6 @@ $pagina = @$_GET['p'];
                     switch ($pagina) {
                         case 'ajuda':
                             echo 'pg ajuda';
-                            break;
-
-                        case 'itens':
-                            echo 'pg itens';
                             break;
 
                         case 'relatorios':

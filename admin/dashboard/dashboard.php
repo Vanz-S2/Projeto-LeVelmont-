@@ -34,6 +34,7 @@ $pagina = @$_GET['p'];
     <section class="dashboard">
         <div>
             <h2>Relátorio de Vendas</h2>
+            <h2>Vai ser um relatorio mensal, itens venda sera aqui agora</h2>
             <table class="table table-hover">
 
                 <thead>
