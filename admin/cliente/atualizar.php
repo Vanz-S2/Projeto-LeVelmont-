@@ -42,7 +42,7 @@ if (isset($_POST['nomeCliente'])) {
 
 
 
-<form action="index.php?p=cliente&c=cadastrar" method="POST" enctype="multipart/form-data" class="formulario-exercicio">
+<form action="index.php?p=cliente&c=atualizar&id=&id=<?php echo $cliente->idCliente ?>" method="POST" enctype="multipart/form-data" class="formulario-exercicio">
 
 
 

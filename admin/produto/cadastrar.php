@@ -17,12 +17,15 @@ if (isset($_POST['nomeProduto'])) {
     }
 
     if (move_uploaded_file($arquivo['tmp_name'], '../img/produto/' . $arquivo['name'])) {
-        $fotoProduto = 'produto/' . $arquivo['name']; // exercicio/corrida.png
+        $fotoProduto = 'produto/' . $arquivo['name']; 
 
     } else {
         throw new Exception("o error foi: ", $arquivo['error']);
     }
 
+
+
+    
 
     require_once('class/produto.php');
 

@@ -20,6 +20,7 @@ class ProdutoClass
     //Metodo da Class
 
 
+
     //Carregar
     public function __construct($id = false)
     {
@@ -89,7 +90,18 @@ class ProdutoClass
         $conn->exec($query);
 
         echo "<script>document.location='index.php?p=produto'</script>";
+
     }
+
+    public function Atualizar(){
+          
+        $sql = "UPDATE tblproduto SET nomeProduto = '".$this->nomeProduto."', tipoProduto = '".$this->tipoProduto."', descricaoProduto = '".$this->descricaoProduto."', categoriaProduto = '".$this->categoriaProduto."', precoProduto = '".$this->precoProduto."', fotoProduto = '".$this->fotoProduto."', statusProduto = '".$this->statusProduto."'
+         WHERE tblproduto.idProduto = '" . $this->idProduto."';";  
+  
+         $connect = Conexao::LigarConexao();
+         $connect->exec($sql);
+         echo "<script>document.location='index.php?p=produto'</script>";
+  }
 
     public function desativar()
     {
