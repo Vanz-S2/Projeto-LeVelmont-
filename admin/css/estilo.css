@@ -1,358 +1,906 @@
-@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
 
-
-body {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
+*,
+a {
+    font-family: 'josefin Sans', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
 }
 
-main {
-    flex: 1;
-    display: flex;
-    background: #A60303;
-    background-image: url(https://www.transparenttextures.com/patterns/green-cup.png);
-
-}
-
-/*------------Começo do Topo---------*/
-
-
-
-/*------------Fim do Topo---------*/
-
-/*------------Começo da tabela---------*/
-   /*------------BootStrap-------*/
-
-   .table_responsive{
-    margin-bottom: 50px;
-}
-
-.tabela {
-    display: flex;
-    flex: 1;
-    margin: 3% 6%;
-   
-
-}
-
-
-.table {
-    border-color: #f1c40f !important;
-    border-radius: 2px;
+.site {
+    max-width: 1200px;
     width: 100%;
-    text-align: center;
     margin: 0 auto;
-    margin-top: 15px;
-    
-}
-
-.tabela-titulo {
-    font-weight: bold;
-    text-transform: uppercase;
-    background: #34495e;
-
-}
-
-.table thead th {
-    color: #ffffff;
-    background-color: #4b4949f2;
-
-}
-
-.table-striped>tbody>tr:nth-of-type(odd)>* {
-    --bs-table-color-type: #000000;
-    --bs-table-bg-type: #e3e3e3;
-
 
 }
 
 
-.table>:not(caption)>*>* {
-    background-color: #ffffff;
+
+
+
+
+
+/*#########################################################*/
+/*-------------------Página Home---------------------------*/
+
+
+/*-----------------Topo----------------- */
+
+header {
+    background: #BF0704;
+}
+
+header div h1 {
+    background: url(../img/icone/logo.svg) no-repeat;
+    padding: 30px 100px;
+    display: block;
+    text-indent: -9999px;
 }
 
 
 
-.info-lista {
-    text-align: center;
-    padding: 20px;
-    font-size: 2em;
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+header div ul {
+    display: flex;
+}
+
+
+
+header div a {
+    text-decoration: none;
     color: black;
-
 }
 
 
 
 
-.cadastrar {
-    display: flex;
-    text-align: end;
-    font-size: 1.4em;
-    padding-right: 15px;
-    flex-direction: row;
-    justify-content: flex-end;
-    color: #ffc107;
-    text-decoration-color: #ffc107;
+header div a:nth-child(2) {
+    margin-left: -15px;
 }
 
-.atualizar{
-    color: #198754;
-    text-decoration-color: #198754;
-}
-
-.desativar{
-    color: red;
-    text-decoration-color: red;
-}
-
-
-.pesquisa{
-    display: flex;
-  justify-content: center;
-  justify-content: space-evenly;
-  margin-right: 27%;
-  margin-left: 20%;
-}
-
-
-/*------------Fim da tabela---------*/
-
-/*------------Começo do Menu---------*/
 
 .menu {
-    margin-right: 20px;
-    max-width: 15%;
-    width: 50%;
-    text-align: center;
-    padding: 15px 0px;
-    border-radius: 20px;
-    max-height: 724px;
-
+    display: flex;
+    justify-content: space-between;
 }
 
 
-.menu ul{
-    padding-left: 15px;
-    padding-right: 15px;
+.menu ul {
+    margin-left: -20%;
 }
 
 
-.menu li{
-    background: #2f2c2cf2;
-    ;
-    padding: 5px;
-    border-radius: 15px;
-    margin: 15px 0;
-}
-
-.menu li a {
-    margin: 10px;
-    font-size: 1.6em;
-    color: #ffffff;
-    line-height: 2.3em;
-    text-decoration: none;
-
+.menu ul li {
+    padding: 10px 0;
 }
 
 
-.menu li a:hover {
+.menu a {
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    display: block;
+    margin: 0 15px;
+    font-family: 'Caprasimo', cursive;
+}
+
+
+.menu a:hover {
+    color: #F2CB05
+}
+
+
+header img {
+    width: 10%;
+}
+
+
+.menu button {
+    background: url(../img/icone/usuario.svg) no-repeat;
+    background-size: cover;
+    text-indent: -9999px;
+    border: 0;
+    padding: 20px 28px;
+}
+
+/*----------------Banner----------------*/
+
+.banner img {
+    width: 100%;
+}
+
+.slick-dotted.slick-slider {
+    margin-bottom: 0px;
+}
+
+.banner .slick-next {
+    right: 35px;
+}
+
+
+.banner .slick-prev {
+    left: 35px;
+    z-index: 1;
+}
+
+
+.banner .slick-prev:before,
+.banner .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+    opacity: .75;
     color: #f1c40f;
 }
 
 
-.menuAtivo {
-    color: #f1c40f !important;
+.banner .slick-dots {
+    bottom: 25px;
 }
 
 
-.menu a{
-    padding: 18px 0px
+.banner .slick-dots li {
+    margin: 0 20px;
 }
-/*------------Fim do Menu---------*/
 
-/*------------Começo do Conteudo---------*/
 
-.conteudo{
+.banner .slick-dots li button:before {
+    font-size: 40px;
+    color: #F2CB05;
+}
+
+
+.banner .slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: #BF0704;
+}
+
+
+/*---------------Dia---------------------------*/
+.dia {
+    background-color: #301d0f !important;
+    background-image: url(../img/imagem/fundo-dia.png);
+
+    text-align: center;
+    font-size: 3em;
+    padding: 30px;
+    color: #ffffff;
+
+}
+
+/*---------------Cardapio---------------------------*/
+
+
+
+.cardapio {
+    padding: 50px 0;
+    text-align: center;
+    background: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+
+}
+
+
+
+.cardapio h2 {
+    color: rgb(0, 0, 0);
+    font-size: 3.8em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 60px;
+}
+
+.cardapio h3 {
+    color: rgb(0, 0, 0);
+    font-size: 2em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 60px;
+
+}
+
+
+
+.cardapio div div {
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+
+
+
+
+.cardapio img {
+    width: 100%;
+    border-radius: 50px 50px 50px 50px;
+    padding-bottom: 15px;
+}
+
+
+
+.cardapio p {
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    text-indent: 2em;
+    padding-bottom: 15px;
+}
+
+
+
+.cardapio button {
+    align-self: center;
+    padding: 10px 25px;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    margin-bottom: 25px;
+    cursor: pointer;
+    background: #f1c40f;
+}
+
+
+
+
+.cardapio button:hover {
+    background: black;
+    color: crimson;
+}
+
+/*-------------------Quem somos------------------------*/
+
+
+
+
+
+.fundoSobre {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    background: white;
+    border-radius: 50px;
+}
+
+
+
+.sobre {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #A60303;
+    background-image: url("https://www.transparenttextures.com/patterns/green-cup.png");
+}
+
+
+
+.sobre h2 {
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+
+}
+
+
+
+.sobre div div {
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://www.transparenttextures.com/patterns/concrete-wall.png);
+}
+
+
+
+.sobre div div div {
+    width: 48%;
+    padding: 0px 25px;
+}
+
+
+
+.sobre img {
+    width: 60%;
+    border-radius: 50px 50px 50px 50px;
+    margin: 0 auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+.sobre div div div:nth-child(1) {
+    flex-direction: column;
+    padding-right: 25px;
+    justify-content: start;
+    padding-left: 25px;
+}
+
+
+
+.sobre p {
+    text-align: justify;
+    font-size: 1.4em;
+    line-height: 1.3em;
+    text-indent: 2em;
+    margin: 0px 40px;
+}
+
+
+
+
+/*-----------------Galeria------------------*/
+
+
+.galeria {
+    padding: 30px 0;
+    display: flex;
     background: #ffffff;
     background-image: url(https://www.transparenttextures.com/patterns/concrete-wall.png);
-    width: 100%;
-    border-radius: 10px;
-    border: solid 2px #000000;
+}
 
+
+.galeria img {
+    width: 50%;
+    border-radius: 50px;
+    margin: 0 25px;
+}
+
+
+.galeria .slick-next {
+    right: 35px;
+}
+
+
+.galeria .slick-prev {
+    left: 35px;
+    z-index: 1;
+}
+
+
+.galeria .slick-prev:before,
+.galeria .slick-next:before {
+    font-family: 'slick';
+    font-size: 40px;
+    line-height: 1;
+    opacity: .75;
+    color: #f1c40f;
+}
+
+
+.galeria .slick-dots li {
+    margin: 0 20px;
+}
+
+
+.galeria .slick-dots li button:before {
+    font-size: 20px;
+
+}
+
+
+.galeria .slick-dots li.slick-active button:before {
+    color: #F2CB05;
+}
+
+.banner .slick-dots li {
+    margin: 0 20px;
+}
+
+
+.banner .slick-dots li button:before {
+    font-size: 40px;
+    color: #f1c40f;
+}
+
+
+/*-----------------Você Sabia------------------*/
+
+.sabia {
+    padding: 50px 0;
+    background: #ffffff;
+    background-image: url(https://www.transparenttextures.com/patterns/concrete-wall.png);
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sabia img{
+    width: 100%'';
+}
+
+
+.sabia div {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+
+
+}
+
+
+.sabia div div {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    border: solid 2px #000000;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.sabia h2 {
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: 800;
+    letter-spacing: 0px;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+.sabia h3 {
+    color: #000000;
+    font-size: 2em;
 }
 
 
 
 
-/*------------Começo do Rodape---------*/
+/*----------------Rodape-----------------*/
 
 .rodape {
     text-align: center;
 }
 
+
 .rodape section:nth-child(1) {
-    background: #477F3C;
+    padding: 50px 0;
+    background: #A60303;
+    background-image: url("https://www.transparenttextures.com/patterns/food.png");
+    display: flex;
+    justify-content: space-between;
 }
 
 
-.rodape section:nth-child(2) {
-    background: #A60303;
+
+.rodape section div {
+    display: flex;
+    justify-content: space-evenly;
+    background: white;
+    border-radius: 30px;
+    padding: 15px;
+}
+
+.rodape section div div {
+    flex-direction: column;
+    width: 50%;
+}
+
+
+
+.rodape div div img {
+    width: 60%;
+    margin: 0 auto;
+    background: #BF0704;
+    border-radius: 10px;
+}
+
+
+.rodape div div:nth-child(3) img:nth-child(4) {
+    width: 100%;
+    background: none;
 }
 
 
 .rodape section:nth-child(1) h2 {
+    font-size: 32px;
+    letter-spacing: 0px;
+}
+
+.rodape h3 {
+    margin: 10px;
+    font-size: 1.2em;
+    line-height: 1.2em;
+}
+
+
+
+.rodape ul {
+    display: flex;
+    justify-content: center;
+}
+
+
+.rodape li {
+    margin: 0 2%;
+}
+
+.rodape ul li:nth-child(1) a {
+    display: block;
+
+}
+
+
+.rodape ul li a {
+    display: block;
+    width: 70px;
+}
+
+
+.rodape ul li a img {
+    width: 60%;
+    background: none;
+
+}
+
+.telefone {
+    display: flex;
+    justify-content: space-around !important;
+
+}
+
+/*-------------desenvolvido por-----------------*/
+
+.rodape section:nth-child(2) {
+    background: #477F3C;
+
+}
+
+
+.rodape section:nth-child(3) {
+    background: #477F3C;
+
+}
+
+
+.rodape section:nth-child(2) h2 {
     color: black;
     padding: 15px 0;
 }
 
 
-.rodape section:nth-child(2) h2 {
+.rodape section:nth-child(3) h2 {
     color: white;
     padding: 15px 0;
 }
 
-/*------------Fim do Rodape---------*/
 
 
-@media (min-width: 1200px) {
+/*-------------------Fim da Página Home--------------------*/
+/*#########################################################*/
 
-    .h2,
-    h2 {
-        font-size: 1rem;
-    }
+
+
+/*#########################################################*/
+/*-------------------Página Promoção---------------------------*/
+
+
+/*galeria de imagem pagina promoção*/
+
+
+.promocao {
+    padding: 50px 0;
+    text-align: center;
+    background: #ffffff;
+
 }
 
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    margin-top: 0;
-    margin-bottom: 0.0rem;
-    font-weight: 500;
-    line-height: 1.0;
-    font-size: 1;
+.promocao h2 {
+    color: #BF0704;
+    font-size: 2.5em;
+    text-align: center;
+    padding: 3% 0 0;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 
-.display-4 {
-    color: #000000;
+.promocao div {
+    display: flex;
+    justify-content: space-around;
+
+}
+
+
+
+.promocao img {
+    padding-top: 15px;
+}
+
+
+ 
+/*galeria de imagem pagina promoção*/
+ 
+ 
+.galeriaPromo {
+    display: flex;
+    overflow: hidden;
+    justify-content: space-around;
+    margin: 5%;
+    height: auto;
+}
+ 
+/**********Seção cardapio***********************/
+.cardapioPromo{
+    display: flex;
+    justify-content: space-around;
+}
+.cardapioPromo ul li{
+    list-style: none;
+}
+.cardapioPromo div ul {
+    display: flex;
+}
+/**********************/
+
+
+
+/* Nossa promo de imagem pagina promoção*/
+.sobrePromocao {
+    padding: 50px 0;
     text-align: center;
 }
 
-.input-group{
-    width: 28%;
-}
-
-
-
-
-/*------------Começo do Cadastro Exercicios---------*/
-.formulario-exercicio {
-    display: flex;
-    margin: 5%;
-    background: #ffffff;
-    border-radius: 40px;
-    padding: 2%;
-    justify-content: center;
-
-}
-
-
-.foto-produto{
-    width: 16%;
-    height: 70%;
-    position: absolute;
-}
-
-
-.formulario-exercicio label,
-legend {
-    font-weight: bold;
+.sobrePromocao h2 {
+    color: #BF0704;
     text-transform: uppercase;
-   
+    font-size: 1.8em;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 20px;
+
 }
 
-.formulario-exercicio input {
-    color: #34495e;
-    border: solid 2px #34495e;
-}
-
-.formulario-exercicio select {
-    color: #34495e;
-    border: solid 2px #34495e;
+.sobrePromocao div div {
+    display: flex;
+    justify-content: space-around;
 }
 
 
-.foto-exercicio {
-    width: 30%;
-    margin: 0 5%;
-    color: #34495e;
-    border: solid 2px #34495e;
-    padding: 20px;
+.sobrePromocao div div div {
+    width: 48%;
+    padding: 0 25px;
+}
+
+.sobrePromocao img {
+    width: 100%;
+    border-radius: 50px 0px 0px 50px;
+}
+
+.sobrePromocao div div div:nth-child(1) {
+    flex-direction: column;
+    padding-left: 25px;
+}
+
+.sobrePromocao div div div:nth-child(2) {
+    flex-direction: column;
+    padding-right: 25px;
+    justify-content: space-between;
+    background: #F2CB05;
+    border-radius: 0px 50px 50px 0px;
+}
+
+.sobrePromocao p {
+    color: #ffffff;
+    text-align: justify;
+    font-size: 1.2em;
+    line-height: 1.8em;
+    text-indent: 2em;
+
+}
+
+
+
+
+
+/*#########################################################*/
+/*-------------------Página Contato---------------------------*/
+
+
+
+.contato {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #A60303;
+    background-image: url("https://www.transparenttextures.com/patterns/green-cup.png");
+
+}
+
+
+
+.contato h2 {
+    color: #F2CB05;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    font-family: 'Josefin Sans', sans-serif;
+    margin-bottom: 20px;
+
+}
+
+
+.contato form {
+    display: flex;
+    background: #F2CB05;
     border-radius: 50px;
+    justify-content: space-around;
+    padding: 4% 1.5%;
+}
+
+.contato form div {
+    width: 45%;
+}
+
+.contato form div div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contato form label {
+    color: #ffffff;
+    font-size: 1.8em;
+    margin-bottom: 2%;
+}
+
+.contato form input,
+.contato form textarea {
+    color: #000000;
+    border: solid 1px #34495e;
+    padding: 0.5em;
+    margin-bottom: 4%;
 
 }
 
-.foto-exercicio input {
-    /* height: 367px; */
+.contato form textarea {
+    resize: none;
+    height: 151px;
+
+}
+
+.btnContato {
+
+    justify-content: space-between;
+    flex-direction: row !important;
+}
+
+.contato form input[type="submit"],
+.contato form input[type="button"] {
+    background: #BF0704;
+    width: 40%;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+}
+
+.contato form input[type="submit"]:hover,
+.contato form input[type="button"]:hover {
+    background: #006900;
+    color: #ffffff;
+}
+
+
+.maps iframe{
+    width: 100%;
+}
+
+/*#########################################################*/
+
+/*-------------------Página Cardapio---------------------------*/
+
+.cardapio-pagina {
+    text-align: center;
+    background-color: #f5f5f5;
+    background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+
+}
+
+.cardapio-pagina h2 {
+    font-size: 48px;
+    line-height: 70px;
+    font-weight: 800;
+    letter-spacing: 0px;
     margin-bottom: 15px;
 }
 
-.foto-exercicio img {
-    width: 100%;
-    max-height: 305px;
-}
-
-.nome-exercicio {
-    margin-right: 5%;
-    width: 50%;
-}
-
-
-.formulario-exercicio fieldset div:nth-child(1) {
-    width: 20%;
-}
-
-
-.formulario-exercicio fieldset div:nth-child(2) {
-    width: 80%;
-}
-
-
-.nome-exercicio div:nth-child(5) {
+.menu-container {
     display: flex;
-    justify-content: flex-end;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+
 }
 
+.menu-button {
+    background-color: #970f0f;
+    color: #f7fbf9;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 15px;
+}
+
+.menu-button:hover {
+    background-color: #f1c40f;
+    color: #000000;
+}
+
+#pizza-details {
+    display: none;
+    margin-top: 20px;
+}
+
+#pizza-name {
+    font-size: 24px;
+    color: #333;
+}
+
+#pizza-description {
+    font-size: 16px;
+    color: #666;
+}
+
+#pizza-price {
+    font-size: 18px;
+    color: #222;
+}
+
+.menu-item {
+    margin-top: 20px;
+}
+
+/*  Estilo para as fotos das pizzas ficarem redondas */
 
 
-/* Dashboard */
-.dashboard{
+.menu-item-image {
+    border-radius: 50%;
+    width: 80px; /* Reduzindo o tamanho das imagens das pizzas */
+    height: 80px; /* Reduzindo o tamanho das imagens das pizzas */
+    object-fit: cover;
+    margin-right: 5px; /* Reduzindo a margem entre as imagens */
+}
+ 
+.menu-columns {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #e3e3e3;
-    
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
-
-
-.dashboard div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background: #e3e3e3;
-    margin-top: 35px;
+ 
+.menu-column {
+    flex-basis: calc(20% - 5px); /* Ajustando a largura das colunas */
+    margin-bottom: 8px; /* Reduzindo a margem entre as colunas */
 }
-
-
-
+ 
+.menu-title {
+    font-weight: bold;
+    font-size: 30px;
+}
+ 
+.menu-item h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+ 
+.menu-item-details p {
+    margin-bottom: 30px; /* Reduzindo o espaçamento entre os detalhes dos itens */
+}
+ 
+.menu-item-price {
+    font-size: 18px;
+    color: #ec1010;
+    font-weight: bold;
+}
+ 
+/* FIM CARDAPIO */
+ 
+/* ... Seções posteriores permanecem inalteradas ... */
+ 
+/* FIM CARDAPIO */

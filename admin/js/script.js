@@ -26,7 +26,11 @@ function confirmar() {
 
 /*     Tabela Funcionario    */
 
-
+document.getElementById('telefoneFuncionario').addEventListener('input', function(event) {
+  var telefone = this.value;
+  telefone = telefone.replace(/(\d{2})(\d{4})(\d{4})/, "($1) $2-$3");
+  this.value = telefone;
+});
 
 
 
@@ -39,15 +43,30 @@ function confirmar() {
 
 
 
+document.getElementById('imgFoto').addEventListener('click', function () {
+  document.getElementById('fotoProduto').click();
+});
+
+document.getElementById('fotoProduto').addEventListener('change', function (e) {
+
+  let imgFoto = document.getElementById('imgFoto');
+  let arquivo = e.target.files[0];
+
+  if (arquivo) {
+    let carregar = new FileReader();
+
+    carregar.onload = function (e) {
+      imgFoto.src = e.target.result;
+      console.log(imgFoto.src);
+    }
+
+    carregar.readAsDataURL(arquivo);
+  }
+
+});
 
 
 
-
-
-
-
-
-/*---*/
 
 function adicionarReal() {
   var precoProduto = document.getElementById('precoProduto').value;
@@ -91,8 +110,6 @@ function isNumber(evt) {
 }
 
 
-
-//Produto
 function filtrarTabela() {
   var tipoSelecionado = document.getElementById('tipoProduto').value.toLowerCase();
   var categoriaSelecionada = document.getElementById('categoriaProduto').value.toLowerCase();
@@ -148,4 +165,8 @@ function filtrarTabela() {
 
 
  
-
+document.getElementById('telefoneCliente').addEventListener('input', function(event) {
+  var telefone = this.value;
+  telefone = telefone.replace(/(\d{2})(\d{4})(\d{4})/, "($1) $2-$3");
+  this.value = telefone;
+});

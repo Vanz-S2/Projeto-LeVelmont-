@@ -81,7 +81,8 @@ class ClienteClass
                                '" . $this->enderecoCliente . "',
                                 '" . $this->areaCliente . "', 
                                 '" . $this->pontosCliente . "',
-                                 '" . $this->statusCliente . "')";
+                                 '" . $this->statusCliente . "',
+                                 '" . $this->idVenda  . "')";
 
         $conn = Conexao::LigarConexao();
         $conn->exec($query);
@@ -93,16 +94,7 @@ class ClienteClass
     //Atualizar
    
     
-    public function Atualizar()
-    {
-        $sql = "UPDATE tblcliente SET nomeCliente = '".$this->nomeCliente."', dataNascCliente = '".$this->dataNascCliente."',telefoneCliente = '".$this->telefoneCliente."',
-         enderecoCliente = '" .$this->enderecoCliente."',areaCliente = '" .$this->areaCliente."',pontosCliente = '" .$this->pontosCliente."', statusCliente = '" .$this->statusCliente."',
-         WHERE idCliente = '".$this->idCliente."';";
-        $connect = Conexao::LigarConexao();
-        $connect->exec($sql);
 
-        echo "<script>document.location='index.php?p=cliente'</script>";
-    }
 
 
     public function desativar()

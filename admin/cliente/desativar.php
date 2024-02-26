@@ -3,7 +3,7 @@
 if (isset($_GET['id'])) {
     $id = $_GET['id'];
  
-    require_once("class/cliente.php");
+    require_once("class/funcionario.php");
     $cliente = new ClienteClass($id);
     $cliente->desativar();
  

@@ -94,21 +94,30 @@ class FuncionarioClass
     }
 
 
-
     //Atualizar
     public function Atualizar()
     {
-        $sql = "UPDATE tblfuncionario SET nomeFuncionario = '".$this->nomeFuncionario."', dataNascFuncionario = '".$this->dataNascFuncionario."',cpfFuncionario = '".$this->cpfFuncionario."', telefoneFuncionario = '" .$this->telefoneFuncionario."',emailFuncionario = '" .$this->emailFuncionario."',turnoFuncionario = '" .$this->turnoFuncionario."', funcaoFuncionario = '" .$this->funcaoFuncionario."',acessoFuncionario = '" .$this->acessoFuncionario."',statusFuncionario = '" .$this->statusFuncionario."'
-         WHERE idFuncionario = '".$this->idFuncionario."';";
-        $connect = Conexao::LigarConexao();
-        $connect->exec($sql);
-
+        $query = "UPDATE tblfuncionario
+                  SET nomeFuncionario ='" . $this->nomeFuncionario . "',
+                     dataNascFuncionario='" . $this->dataNascFuncionario . "',
+                     cpfFuncionario='" . $this->cpfFuncionario . "',
+                     telefoneFuncionario='" . $this->telefoneFuncionario . "',
+                     emailFuncionario='" . $this->emailFuncionario . "',
+                     turnoFuncionario='" . $this->turnoFuncionario . "',
+                     funcaoFuncionario='" . $this->funcaoFuncionario . "',
+                     acessoFuncionario='" . $this->acessoFuncionario . "',
+                     statusFuncionario='" . $this->statusFuncionario . "' 
+                  WHERE idFuncionario = '" . $this->idFuncionario . "'";
+    
+        $conn = Conexao::LigarConexao();
+        $conn->exec($query);
+    
         echo "<script>document.location='index.php?p=funcionario'</script>";
     }
     
-       
 
-    //Desativar
+
+
     public function desativar()
     {
 
