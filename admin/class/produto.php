@@ -9,7 +9,7 @@ class ProdutoClass
     public $idProduto;
     public $nomeProduto;
     public $tipoProduto;
-    public $precoProduto;
+    public $precoProdutoUnitario;
     public $statusProduto;
     public $descricaoProduto;
     public $fotoProduto;
@@ -18,6 +18,7 @@ class ProdutoClass
 
 
     //Metodo da Class
+
 
 
     //Carregar
@@ -42,7 +43,7 @@ class ProdutoClass
         foreach ($lista as $linha) {
             $this->nomeProduto = $linha["nomeProduto"];
             $this->tipoProduto = $linha["tipoProduto"];
-            $this->precoProduto = $linha["precoProduto"];
+            $this->precoProdutoUnitario = $linha["precoProdutoUnitario"];
             $this->statusProduto = $linha["statusProduto"];
             $this->descricaoProduto = $linha["descricaoProduto"];
             $this->fotoProduto = $linha["fotoProduto"];
@@ -55,13 +56,14 @@ class ProdutoClass
    
 
     public function Listar()
-    {
-        $sql = "SELECT * FROM tblproduto ORDER BY idProduto ASC";
-        $conn = Conexao::LigarConexao();
-        $resultado = $conn->query($sql);
-        $lista = $resultado->fetchAll();
-        return $lista;
-    }
+{
+    $sql = "SELECT * FROM tblproduto ORDER BY FIELD(statusProduto, 'ATIVO', 'DESATIVADO') ASC";
+    $conn = Conexao::LigarConexao();
+    $resultado = $conn->query($sql);
+    $lista = $resultado->fetchAll();
+    return $lista;
+}
+
 
 
 
@@ -72,14 +74,14 @@ class ProdutoClass
     {
         $query = "INSERT INTO tblproduto (nomeProduto,
                                             tipoProduto,
-                                            precoProduto,
+                                            precoProdutoUnitario,
                                             statusProduto,
                                             descricaoProduto,
                                             fotoProduto,
                                             categoriaProduto)
                     VALUES ('" . $this->nomeProduto . "',
                              '" . $this->tipoProduto . "',
-                              '" . $this->precoProduto . "',
+                              '" . $this->precoProdutoUnitario . "',
                                '" . $this->statusProduto . "',
                                 '" . $this->descricaoProduto . "', 
                                 '" . $this->fotoProduto . "',
@@ -89,7 +91,18 @@ class ProdutoClass
         $conn->exec($query);
 
         echo "<script>document.location='index.php?p=produto'</script>";
+
     }
+
+    public function Atualizar(){
+          
+        $sql = "UPDATE tblproduto SET nomeProduto = '".$this->nomeProduto."', tipoProduto = '".$this->tipoProduto."', descricaoProduto = '".$this->descricaoProduto."', categoriaProduto = '".$this->categoriaProduto."', precoProdutoUnitario = '".$this->precoProdutoUnitario."', fotoProduto = '".$this->fotoProduto."', statusProduto = '".$this->statusProduto."'
+         WHERE tblproduto.idProduto = '" . $this->idProduto."';";  
+  
+         $connect = Conexao::LigarConexao();
+         $connect->exec($sql);
+         echo "<script>document.location='index.php?p=produto'</script>";
+  }
 
     public function desativar()
     {

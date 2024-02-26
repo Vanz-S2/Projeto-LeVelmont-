@@ -26,11 +26,7 @@ function confirmar() {
 
 /*     Tabela Funcionario    */
 
-document.getElementById('telefoneFuncionario').addEventListener('input', function(event) {
-  var telefone = this.value;
-  telefone = telefone.replace(/(\d{2})(\d{4})(\d{4})/, "($1) $2-$3");
-  this.value = telefone;
-});
+
 
 
 
@@ -43,30 +39,15 @@ document.getElementById('telefoneFuncionario').addEventListener('input', functio
 
 
 
-document.getElementById('imgFoto').addEventListener('click', function () {
-  document.getElementById('fotoProduto').click();
-});
-
-document.getElementById('fotoProduto').addEventListener('change', function (e) {
-
-  let imgFoto = document.getElementById('imgFoto');
-  let arquivo = e.target.files[0];
-
-  if (arquivo) {
-    let carregar = new FileReader();
-
-    carregar.onload = function (e) {
-      imgFoto.src = e.target.result;
-      console.log(imgFoto.src);
-    }
-
-    carregar.readAsDataURL(arquivo);
-  }
-
-});
 
 
 
+
+
+
+
+
+/*---*/
 
 function adicionarReal() {
   var precoProduto = document.getElementById('precoProduto').value;
@@ -76,8 +57,6 @@ function adicionarReal() {
   }
  }
  
-
-
 
 function proibirLetras(event) {
   var charCode = (event.which) ? event.which : event.keyCode;
@@ -110,34 +89,11 @@ function isNumber(evt) {
 }
 
 
-function filtrarTabela() {
-  var tipoSelecionado = document.getElementById('tipoProduto').value.toLowerCase();
-  var categoriaSelecionada = document.getElementById('categoriaProduto').value.toLowerCase();
-  var filtro = document.getElementById('pesquisa').value.toLowerCase();
-  var linhas = document.getElementById('tabela').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
-   
-  for (var i = 0; i < linhas.length; i++) {
-     var linha = linhas[i];
-     var celulas = linha.getElementsByTagName('td');
-     if (celulas.length >= 5) {
-         var texto = celulas[2].textContent || celulas[2].innerText;
-         var tipo = celulas[3].textContent || celulas[3].innerText;
-         var categoria = celulas[4].textContent || celulas[4].innerText;
-         if ((texto.toLowerCase().indexOf(filtro) > -1) && (tipo.toLowerCase().indexOf(tipoSelecionado) > -1) && (categoria.toLowerCase().indexOf(categoriaSelecionada) > -1)) {
-             linha.style.display = "";
-         } else {
-             linha.style.display = "none";
-         }
-     }
-  }
- }
- 
- 
- 
- 
- 
-/*     Tabela Cliente   */
+/*     Tabela Produto   */
 
+
+
+ 
  
 function filtrarTabela() {
   var tipoSelecionado = document.getElementById('tipoProduto').value.toLowerCase();
@@ -164,9 +120,44 @@ function filtrarTabela() {
 }
 
 
+
+/*     Tabela Banner   */
+
+function filtrarTabela() {
+    var statusSelecionado = document.getElementById('statusBanner').value.toLowerCase();
+    var filtro = document.getElementById('pesquisa').value.toLowerCase();
+    var linhas = document.getElementById('tabela').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
+   
+    for (var i =  0; i < linhas.length; i++) {
+        var linha = linhas[i];
+        var celulas = linha.getElementsByTagName('td');
+        if (celulas.length >=  5) { // Certifique-se de que há pelo menos  5 células
+            var texto = celulas[2].textContent || celulas[2].innerText; // Nome do banner
+            var status = celulas[5].textContent || celulas[5].innerText; // Status do banner
+            if ((texto.toLowerCase().indexOf(filtro) > -1) && (status.toLowerCase().indexOf(statusSelecionado) > -1)) {
+                linha.style.display = "";
+            } else {
+                linha.style.display = "none";
+            }
+        }
+    }
+}
+
+
+
+/*    Tabela Estoque   */
+
+function calcularLucroDia() {
+    // Obtém os valores dos campos de input
+    var aberturaCaixaValor = document.getElementById('aberturaCaixaValor').value;
+    var fechamentoCaixaValor = document.getElementById('fechamentoCaixaValor').value;
+
+    // Realiza a subtração
+    var lucroDia = fechamentoCaixaValor - aberturaCaixaValor;
+
+    // Define o resultado no campo de input "Lucro do Dia"
+    document.getElementById('valorTotal').value = lucroDia;
+}
+
  
-document.getElementById('telefoneCliente').addEventListener('input', function(event) {
-  var telefone = this.value;
-  telefone = telefone.replace(/(\d{2})(\d{4})(\d{4})/, "($1) $2-$3");
-  this.value = telefone;
-});
+

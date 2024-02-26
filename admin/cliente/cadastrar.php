@@ -6,7 +6,6 @@ if (isset($_POST['nomeCliente'])) {
     $dataNascCliente = $_POST['dataNascCliente'];
     $enderecoCliente = $_POST['enderecoCliente'];
     $telefoneCliente = $_POST['telefoneCliente'];
-    $pontosCliente = $_POST['pontosCliente'];
     $statusCliente = $_POST['statusCliente'];
 
 
@@ -18,7 +17,6 @@ if (isset($_POST['nomeCliente'])) {
     $cliente->dataNascCliente = $dataNascCliente;
     $cliente->enderecoCliente = $enderecoCliente;
     $cliente->telefoneCliente = $telefoneCliente;
-    $cliente->pontosCliente = $pontosCliente;
     $cliente->statusCliente = $statusCliente;
 
     $cliente->Cadastrar();
@@ -77,11 +75,6 @@ if (isset($_POST['nomeCliente'])) {
                 <input type="date" class="form-control" id="dataNascCliente" name="dataNascCliente" required>
             </div>
 
-
-            <div class="mb-3">
-                <label for="pontosCliente">Pontos:</label>
-                <input type="text" class="form-control" name="pontosCliente" id="pontosCliente" onkeypress="isNumber(event);" onkeypress="proibirLetras(event);" placeholder="00" required>
-            </div>
 
 
 

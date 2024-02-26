@@ -12,19 +12,15 @@ if (isset($_POST['nomeCliente'])) {
     $dataNascCliente = $_POST['dataNascCliente'];
     $enderecoCliente = $_POST['enderecoCliente'];
     $telefoneCliente = $_POST['telefoneCliente'];
-    $pontosCliente = $_POST['pontosCliente'];
     $statusCliente = $_POST['statusCliente'];
 
 
-    require_once('class/cliente.php');
-
-    $cliente = new ClienteClass();
+    
 
     $cliente->nomeCliente = $nomeCliente;
     $cliente->dataNascCliente = $dataNascCliente;
     $cliente->enderecoCliente = $enderecoCliente;
     $cliente->telefoneCliente = $telefoneCliente;
-    $cliente->pontosCliente = $pontosCliente;
     $cliente->statusCliente = $statusCliente;
 
     $cliente->Atualizar();
@@ -42,7 +38,7 @@ if (isset($_POST['nomeCliente'])) {
 
 
 
-<form action="index.php?p=cliente&c=cadastrar" method="POST" enctype="multipart/form-data" class="formulario-exercicio">
+<form action="index.php?p=cliente&c=atualizar&id=<?php echo $cliente->idCliente ?>" method="POST" enctype="multipart/form-data" class="formulario-exercicio">
 
 
 
@@ -62,7 +58,7 @@ if (isset($_POST['nomeCliente'])) {
 
         <div class="mb-3">
             <label for="telefoneCliente" class="form-label">Telefone:</label>
-            <input type="text" class="form-control" name="telefoneCliente" id="telefoneCliente" placeholder="Telefone do Cliente" value="<?php echo $cliente->telefoneCliente ?>">
+            <input type="tell" class="form-control" name="telefoneCliente" id="telefoneCliente" placeholder="Telefone do Cliente" value="<?php echo $cliente->telefoneCliente ?>">
         </div>
 
 
@@ -73,16 +69,12 @@ if (isset($_POST['nomeCliente'])) {
         <div class="row">
 
 
-            <div class="mb-3">
+                <div class="mb-3">
                 <label for="dataNascCliente">Data de nascimento:</label><br>
                 <input type="date" class="form-control" id="dataNascCliente" name="dataNascCliente" value="<?php echo $cliente->dataNascCliente ?>">
             </div>
 
 
-            <div class="mb-3">
-                <label for="pontosCliente">Pontos:</label>
-                <input type="text" class="form-control" name="pontosCliente" id="pontosCliente" onkeypress="isNumber(event);" onkeypress="proibirLetras(event);" placeholder="00" value="<?php echo $cliente->pontosCliente ?>">
-            </div>
 
 
 

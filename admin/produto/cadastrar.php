@@ -4,7 +4,7 @@ if (isset($_POST['nomeProduto'])) {
 
     $nomeProduto = $_POST['nomeProduto'];
     $tipoProduto = $_POST['tipoProduto'];
-    $precoProduto = $_POST['precoProduto'];
+    $precoProdutoUnitario = $_POST['precoProdutoUnitario'];
     $statusProduto = $_POST['statusProduto'];
     $descricaoProduto = $_POST['descricaoProduto'];
     $categoriaProduto = $_POST['categoriaProduto'];
@@ -17,12 +17,15 @@ if (isset($_POST['nomeProduto'])) {
     }
 
     if (move_uploaded_file($arquivo['tmp_name'], '../img/produto/' . $arquivo['name'])) {
-        $fotoProduto = 'produto/' . $arquivo['name']; // exercicio/corrida.png
+        $fotoProduto = 'produto/' . $arquivo['name']; 
 
     } else {
         throw new Exception("o error foi: ", $arquivo['error']);
     }
 
+
+
+    
 
     require_once('class/produto.php');
 
@@ -30,7 +33,7 @@ if (isset($_POST['nomeProduto'])) {
 
     $produto->nomeProduto = $nomeProduto;
     $produto->tipoProduto = $tipoProduto;
-    $produto->precoProduto = $precoProduto;
+    $produto->precoProdutoUnitario = $precoProdutoUnitario;
     $produto->statusProduto = $statusProduto;
     $produto->descricaoProduto = $descricaoProduto;
     $produto->fotoProduto = $fotoProduto;
@@ -115,8 +118,8 @@ if (isset($_POST['nomeProduto'])) {
 
 
             <div class="mb-3">
-                <label for="precoProduto">Preço do Produto:</label>
-                <input type="text" class="form-control" name="precoProduto" id="precoProduto" onkeyup="adicionarReal();" onkeypress="isNumber(event);" onkeypress="proibirLetras(event);" placeholder="R$00,00" required>
+                <label for="precoProdutoUnitario">Preço do Produto:</label>
+                <input type="text" class="form-control" name="precoProdutoUnitario" id="precoProdutoUnitario"  onkeypress="isNumber(event);" onkeypress="proibirLetras(event);" placeholder="R$00,00" required>
             </div>
 
 

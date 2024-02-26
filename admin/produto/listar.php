@@ -115,7 +115,7 @@ $lista = $produto->Listar();
                     </td>
 
                     <td>
-                        R$ <?php echo $linha['precoProduto'] ?>
+                        R$ <?php echo $linha['precoProdutoUnitario'] ?>
                     </td>
 
                     <td>

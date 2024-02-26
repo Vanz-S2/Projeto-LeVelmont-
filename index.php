@@ -1,3 +1,12 @@
+<?php
+require_once('admin/class/banner.php');
+$banner = new BannerClass();
+$lista = $banner->Listar();
+?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -55,14 +64,9 @@
 
 
     <!--Começo do Banner-->
-    <section class="banner">
-
-        <img src="img/imagem/banner-novo-3.png" alt="">
-        <img src="img/imagem/banner-novo-2.png" alt="">
-        <img src="img/imagem/banner-novo-1.png" alt="">
-
-
-    </section>
+    <?php
+        require_once('conteudo/banner.php');
+    ?>
     <!--Fim do Banner-->
 
 

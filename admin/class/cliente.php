@@ -11,10 +11,9 @@ class ClienteClass
     public $dataNascCliente;
     public $telefoneCliente;
     public $enderecoCliente;
-    public $areaCliente;
-    public $pontosCliente;
+    public $pagamentosPendentes;
     public $statusCliente;
-    public $idVenda ;
+    
    
 
 
@@ -45,10 +44,8 @@ class ClienteClass
             $this->dataNascCliente = $linha["dataNascCliente"];
             $this->telefoneCliente = $linha["telefoneCliente"];
             $this->enderecoCliente = $linha["enderecoCliente"];
-            $this->areaCliente = $linha["areaCliente"];
-            $this->pontosCliente = $linha["pontosCliente"];
+            $this->pagamentosPendentes = $linha["pagamentosPendentes"];
             $this->statusCliente = $linha["statusCliente"];
-            $this->idVenda  = $linha["idVenda "];
         }
     }
 
@@ -56,7 +53,7 @@ class ClienteClass
     //Listar
     public function Listar()
     {
-        $sql = "SELECT * FROM tblcliente WHERE  statusCliente = 'ATIVO' ORDER BY idCliente  ASC";
+        $sql = "SELECT * FROM tblcliente ORDER BY FIELD(statusCliente, 'ATIVO', 'DESATIVADO') ASC";
         $conn = Conexao::LigarConexao();
         $resultado = $conn->query($sql);
         $lista = $resultado->fetchAll();
@@ -71,18 +68,14 @@ class ClienteClass
                                             dataNascCliente,
                                             telefoneCliente,
                                             enderecoCliente,
-                                            areaCliente,
-                                            pontosCliente,
-                                            statusCliente,
-                                            idVenda)
+                                            pagamentosPendentes,
+                                            statusCliente)
                     VALUES ('" . $this->nomeCliente . "',
                              '" . $this->dataNascCliente . "',
                               '" . $this->telefoneCliente . "',
-                               '" . $this->enderecoCliente . "',
-                                '" . $this->areaCliente . "', 
-                                '" . $this->pontosCliente . "',
-                                 '" . $this->statusCliente . "',
-                                 '" . $this->idVenda  . "')";
+                               '" . $this->enderecoCliente . "', 
+                                '" . $this->pagamentosPendentes . "',
+                                 '" . $this->statusCliente . "')";
 
         $conn = Conexao::LigarConexao();
         $conn->exec($query);
@@ -94,6 +87,16 @@ class ClienteClass
     //Atualizar
    
     
+    public function Atualizar()
+{
+    $sql = "UPDATE tblcliente SET nomeCliente = '".$this->nomeCliente."', dataNascCliente = '".$this->dataNascCliente."', telefoneCliente = '".$this->telefoneCliente."',
+     enderecoCliente = '".$this->enderecoCliente."', pagamentosPendentes = '".$this->pagamentosPendentes."', statusCliente = '".$this->statusCliente."'
+     WHERE idCliente = '".$this->idCliente."';";
+    $connect = Conexao::LigarConexao();
+    $connect->exec($sql);
+
+    echo "<script>document.location='index.php?p=cliente'</script>";
+}
 
 
 

@@ -19,9 +19,6 @@ if (isset($_POST['nomeFuncionario'])) {
     $statusFuncionario = $_POST['statusFuncionario'];
 
 
-    require_once('class/funcionario.php');
-
-    $funcionario = new FuncionarioClass();
 
     $funcionario->nomeFuncionario = $nomeFuncionario;
     $funcionario->dataNascFuncionario = $dataNascFuncionario;
@@ -46,7 +43,7 @@ if (isset($_POST['nomeFuncionario'])) {
 
 
 
-<form action="index.php?p=funcionario&f=cadastrar" method="POST" enctype="multipart/form-data" class="formulario-exercicio">
+<form action="index.php?p=funcionario&f=atualizar&id=<?php echo $funcionario->idFuncionario ?>" method="POST" enctype="multipart/form-data" class="formulario-exercicio">
 
 
 
@@ -169,7 +166,7 @@ if (isset($_POST['nomeFuncionario'])) {
 
 
             <div class="col-12">
-                <button type="submit" class="btn btn-primary">Cadastrar Funciónario</button>
+                <button type="submit" class="btn btn-primary" onclick="confirmar()">Cadastrar Funciónario</button>
             </div>
 
 

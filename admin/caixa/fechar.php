@@ -1,6 +1,6 @@
 <?php
 
-session_start();
+
 
 $id = $_GET["id"];
 require_once('class/caixa.php');
@@ -22,7 +22,7 @@ if (isset($_POST['dataCaixa'])) {
     $caixa->horaFechamentoCaixa = $horaFechamentoCaixa;
     $caixa->fechamentoCaixaValor = $fechamentoCaixaValor;
     $caixa->valorTotal = $valorTotal; // Atribui o resultado do cálculo ao valorTotal
-    $_SESSION['valorTotal'] = $valorTotal;
+
 
     $caixa->FecharCaixa();
 }
@@ -43,7 +43,7 @@ if (isset($_POST['dataCaixa'])) {
     <div class="nome-exercicio">
 
 
-    <div class="mb-3">
+        <div class="mb-3">
             <label for="aberturaCaixaValor" class="form-label">Valor Caixa na Abertura:</label>
             <input type="number" class="form-control" name="aberturaCaixaValor" id="aberturaCaixaValor" placeholder="" value="<?php echo $caixa->aberturaCaixaValor ?>" disabled>
         </div>
@@ -61,8 +61,10 @@ if (isset($_POST['dataCaixa'])) {
 
         <div class="mb-3">
             <label for="valorTotal" class="form-label">Lucro do Dia:</label>
-            <input type="number" class="form-control" name="valorTotal" id="valorTotal" placeholder="" value="<?php echo isset($_SESSION['valorTotal']) ? $_SESSION['valorTotal'] : ''; ?>" disabled>
+            <input type="number" class="form-control" name="valorTotal" id="valorTotal" placeholder="" value="<?php echo $caixa->valorTotal ?>" disabled>
+            <button type="button" onclick="calcularLucroDia()">Calcular Lucro do Dia</button>
         </div>
+
 
 
 

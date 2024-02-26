@@ -60,8 +60,7 @@ $lista = $cliente->Listar();
                 <th>Endereço</th>
                 <th>Telefone</th>
                 <th>Data Nascimento</th>
-                <th>Pontos</th>
-                <th>Última Venda</th>
+                <th>Pagamento Pendente</th>
                 <th>Status</th>
                 <th>Atualizar</th>
                 <th>Desativar</th>
@@ -95,11 +94,7 @@ $lista = $cliente->Listar();
                     </td>
 
                     <td>
-                         <?php echo $linha['pontosCliente'] ?>
-                    </td>
-
-                    <td>
-                        <?php echo $linha['idVenda'] ?>
+                        R$<?php echo $linha['pagamentosPendentes'] ?>
                     </td>
 
                     <td>
