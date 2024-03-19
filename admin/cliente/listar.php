@@ -42,7 +42,7 @@ $lista = $cliente->Listar();
         <select class="statusCliente" id="statusCliente" onchange="filtrarTabela()">
             <option value="">Selecione o Status </option>
             <option value="ATIVO">ATIVO</option>
-            <option value="DESATIVADO">DESATIVADO</option>
+            <option value="PENDENTE">PENDENTE</option>
         </select>
 
 

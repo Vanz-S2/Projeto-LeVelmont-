@@ -14,7 +14,7 @@ main {
     display: flex;
     background: #A60303;
     background-image: url(https://www.transparenttextures.com/patterns/green-cup.png);
-    max-height: 835px;
+    max-height: 827px;
 
 }
 
@@ -128,13 +128,11 @@ main {
     text-align: center;
     padding: 15px 0px;
     border-radius: 20px;
-    
+
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap; /* Adicionado para permitir que os itens sejam dispostos em várias linhas */
     overflow-y: auto; /* Adicionado para habilitar a barra de rolagem vertical quando necessário */
-    max-height:  100%; /* Garante que o menu não exceda a altura disponível */
-    /* Outras propriedades existentes */
+    max-height:  100%; 
 
 }
 
@@ -159,9 +157,9 @@ main {
     color: #ffffff;
     line-height: 2.3em;
     text-decoration: none;
-    overflow-wrap: break-word; /* Quebra palavras longas para evitar o overflow */
-    word-break: break-all; /* Quebra palavras em qualquer ponto para evitar o overflow */
-    /* Outras propriedades existentes */
+    /* overflow-wrap: break-word; Quebra palavras longas para evitar o overflow */
+    /* word-break: break-all; Quebra palavras em qualquer ponto para evitar o overflow */
+   
 
 }
 
@@ -190,16 +188,15 @@ main {
     border-radius: 10px;
     border: solid 2px #000000;
     overflow-x: auto;
-    overflow-y: auto; /* Adicionado para habilitar a barra de rolagem vertical */
-    max-height: 100%; /* Garante que o conteúdo tenha uma altura definida */
-    /* Outras propriedades existentes */
+    overflow-y: auto; 
+    max-height: 100%; 
 
 }
 
 
 .conteudo img {
-    width:  150px; /* Define a largura da imagem */
-    height:  150px; /* Define a altura da imagem */
+    width:  150px;
+    height:  150px; 
     object-fit: cover; /* Ajusta a imagem para preencher o espaço disponível mantendo suas proporções */
 }
 

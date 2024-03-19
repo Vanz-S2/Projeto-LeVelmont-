@@ -111,7 +111,12 @@ $pagina = @$_GET['p'];
 
                             //Pagamentos
                         case 'pagamentos':
-                            echo 'pg pagamentos';
+                            echo 'pagamento,itensvenda e venda. Confirmar de como vai funcionar.';
+                            break;
+
+                             //Itens
+                        case 'itens':
+                            echo 'pagamento,itensvenda e venda. Confirmar de como vai funcionar.';
                             break;
 
                             //Estoque
@@ -123,6 +128,18 @@ $pagina = @$_GET['p'];
                             //Banner
                         case 'banner':
                             require_once("banner/banner.php");
+                            break;
+
+
+                             //Banner
+                        case 'galeria':
+                            echo 'Pendente.';
+                            break;
+
+
+                             //Banner
+                        case 'cardapio':
+                            echo 'Pendente.';
                             break;
 
                             //Ajuda

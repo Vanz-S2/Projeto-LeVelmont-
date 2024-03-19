@@ -13,15 +13,16 @@ if (isset($_POST['dataCaixa'])) {
     $aberturaCaixaValor = $_POST['aberturaCaixaValor'];
     $horaFechamentoCaixa = $_POST['horaFechamentoCaixa'];
     $fechamentoCaixaValor = $_POST['fechamentoCaixaValor'];
+    $valorTotal = $_POST['valorTotal'];
 
-    // Calcula o lucro do dia subtraindo o valor de abertura do valor de fechamento
-    $valorTotal  = $fechamentoCaixaValor - $aberturaCaixaValor;
+    
+    //$valorTotal  = $fechamentoCaixaValor - $aberturaCaixaValor;
 
 
     $caixa->aberturaCaixaValor = $aberturaCaixaValor;
     $caixa->horaFechamentoCaixa = $horaFechamentoCaixa;
     $caixa->fechamentoCaixaValor = $fechamentoCaixaValor;
-    $caixa->valorTotal = $valorTotal; // Atribui o resultado do cálculo ao valorTotal
+    $caixa->valorTotal = $valorTotal; 
 
 
     $caixa->FecharCaixa();

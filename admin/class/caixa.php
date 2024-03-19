@@ -82,7 +82,7 @@ class CaixaClass
     //Fechar
     public function FecharCaixa()
     {
-        $sql = "UPDATE tblcaixa SET aberturaCaixaValor = '" .$this->aberturaCaixaValor."', fechamentoCaixaValor = '" .$this->fechamentoCaixaValor."',horaFechamentoCaixa = '" .$this->horaFechamentoCaixa."',valorTotal = '" .$this->valorTotal."'
+        $sql = "UPDATE tblcaixa SET fechamentoCaixaValor = '" .$this->fechamentoCaixaValor."',horaFechamentoCaixa = '" .$this->horaFechamentoCaixa."',valorTotal = '" .$this->valorTotal."'
         WHERE idCaixa = '" .$this->idCaixa."';";
         
         

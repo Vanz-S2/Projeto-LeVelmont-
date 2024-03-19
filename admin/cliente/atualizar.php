@@ -23,6 +23,8 @@ if (isset($_POST['nomeCliente'])) {
     $cliente->telefoneCliente = $telefoneCliente;
     $cliente->statusCliente = $statusCliente;
 
+    
+
     $cliente->Atualizar();
 }
 

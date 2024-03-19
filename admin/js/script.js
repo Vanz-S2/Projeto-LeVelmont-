@@ -15,6 +15,7 @@ function confirmar() {
     if (resultado == true) {
         // Código a ser executado se o usuário clicar em OK
         console.log('Usuário confirmou');
+        console.log ("<script>document.location='index.php?p=caixa'</script>")
     } else {
         // Código a ser executado se o usuário clicar em Cancelar
         console.log('Usuário cancelou');
@@ -145,7 +146,7 @@ function filtrarTabela() {
 
 
 
-/*    Tabela Estoque   */
+/*    Tabela Caixa   */
 
 function calcularLucroDia() {
     // Obtém os valores dos campos de input

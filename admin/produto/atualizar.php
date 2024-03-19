@@ -64,7 +64,7 @@ if (isset($_POST['nomeProduto'])) {
     <input type="file" class="form-control" id="fotoProduto" name="fotoProduto" style="display:none;">
     <img src="../img/<?php echo $produto->fotoProduto; ?>" alt="Funcionário Photo" id="imgfoto">
 </div>
-
+''
     
 
     <div class="nome-exercicio">
