@@ -1,10 +1,3 @@
-<?php
-require_once('admin/class/banner.php');
-$banner = new BannerClass();
-$lista = $banner->Listar();
-?>
-
-
 
 
 <!DOCTYPE html>
