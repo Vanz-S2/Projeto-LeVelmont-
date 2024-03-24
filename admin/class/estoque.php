@@ -107,7 +107,7 @@ class EstoqueClass
     public function desativar()
     {
 
-        $query = "UPDATE tblestoque SET datadeValidade ='DESATIVADO' WHERE idEstoque = " . $this->idEstoque;
+        $query = "UPDATE tblestoque SET statusEstoque ='DESATIVADO' WHERE idEstoque = " . $this->idEstoque;
 
         $conn = Conexao::LigarConexao();
         $conn->exec($query);

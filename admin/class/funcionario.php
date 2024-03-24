@@ -16,6 +16,7 @@ class FuncionarioClass
     public $funcaoFuncionario;
     public $acessoFuncionario;
     public $statusFuncionario;
+    public $senhaFuncionario;
 
 
     //Metodo da Class
@@ -50,6 +51,7 @@ class FuncionarioClass
             $this->funcaoFuncionario = $linha["funcaoFuncionario"];
             $this->acessoFuncionario = $linha["acessoFuncionario"];
             $this->statusFuncionario = $linha["statusFuncionario"];
+            $this->senhaFuncionario = $linha["senhaFuncionario"];
         }
     }
 
@@ -117,4 +119,52 @@ class FuncionarioClass
         $conn = Conexao::LigarConexao();
         $conn->exec($query);
     }
+
+
+    //Verificar Login
+    public function verificarLogin() 
+    {
+        $sql = "SELECT * FROM tblfuncionario WHERE emailFuncionario = '".$this->emailFuncionario."' AND senhaFuncionario = '".$this->senhaFuncionario."';";
+
+        $conn = Conexao::LigarConexao();
+        $resultado = $conn->query($sql);
+        $funcionario = $resultado->fetch();
+
+        if($funcionario) {
+            return $funcionario['idFuncionario'];
+        } else {
+            return false;
+        }
+    }
+
+}//Fim da Classe funcionario
+
+
+
+if(isset($_POST['email'])) 
+{
+    // Instancia um novo objeto da classe InstrutorClass para manipular operações relacionadas aos instrutores
+    $funcionario = new FuncionarioClass();
+
+     // Extrai o valor do campo 'email'e'password' enviado pelo formulário e o armazena na variável $emailLogin
+    $email = $_POST['email'];
+    $senha = $_POST['senha'];
+
+    // Define os valores do email e senha no objeto $funcionarios para  verificação
+    $funcionario->emailFuncionario = $email;
+    $funcionario->senhaFuncionario = $senha;
+
+    // Chama o método verificarLogin() para vereficação
+    if($idFuncionario = $funcionario->verificarLogin()) {
+        session_start();
+         // Armazena o ID do funcionário na variável de sessão $_SESSION['idFuncionario']
+        $_SESSION['idFuncionario'] = $idFuncionario;
+        echo json_encode(['success' => true, 'message' => 'Login realizado com sucesso', 'idFuncionario' => $idFuncionario]);
+    } else {
+        echo json_encode(['success' => false, 'message' => 'Login não realizado. Email ou senha inválidos']);
+    }
 }
+
+
+
+

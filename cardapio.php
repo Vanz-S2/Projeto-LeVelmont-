@@ -39,10 +39,8 @@
                 <ul>
                     <li><a href="index.php">Home</a></li>
                     <li><a href="promocao.php">Promoções</a></li>
-                    <li><a href="#">Quem somos</a></li>
                     <li><a href="contato.php">Contato</a></li>
                 </ul>
-                <button>Login</button>
 
             </nav>
         </div>

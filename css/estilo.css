@@ -791,6 +791,36 @@ header img {
     width: 100%;
 }
 
+
+.faq {
+    list-style: none;
+    padding-left: 0;
+}
+.faq dt {
+    cursor: pointer;
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+.faq dd {
+    display: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.faq dt:hover {
+    background-color: #e0e0e0;
+}
+.faq dt.active {
+    background-color: #ddd;
+}
+.faq dt.active + dd {
+    display: block;
+}
+
+.contato div div h2{
+    color:#006900;
+}
+
 /*#########################################################*/
 
 /*-------------------Página Cardapio---------------------------*/
@@ -904,3 +934,138 @@ header img {
 /* ... Seções posteriores permanecem inalteradas ... */
  
 /* FIM CARDAPIO */
+
+
+
+/*/
+/**                  PAGINA LOGIN               **/
+
+
+.loginHtml{
+    background: #ffffff;
+    background-image: none;
+  background-image: url(https://www.transparenttextures.com/patterns/concrete-wall.png);
+  font-size: 62.5%;
+    --default-border:0.1rem solid rgba(0, 0, 0.15);
+    --default-border-radius:1.2rem;
+}
+
+.contente{
+    display: grid;
+    grid-template-areas:
+    ". . . . ."
+    ". hero . form ."
+    ". hero . form ."
+    ". . . . ."
+    ;
+    gap: 8.5rem;
+    display: flex;
+  justify-content: center;
+  margin-top: 8%;
+  background: #ffffff;
+    background-image: none;
+  background-image: url(https://www.transparenttextures.com/patterns/concrete-wall.png);
+}
+
+
+.formulImg h1{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 6.25em;
+    font-weight: 500;
+    line-height: 75px;
+    
+    color: #006900;
+}
+
+ h1 span, h2 span {
+    color:#A60303;
+}
+
+.formulImg{
+    grid-area: hero;
+    text-align: center;
+}
+
+.formulImg2{
+    padding-left: 100px;
+}
+
+/FORMULARIO DA PAGINA LOGIN/
+.formularLogin{
+    grid-area: form;
+}
+.formularLogin{
+    width: 70rem;
+    height: 60rem;
+    border:var(--default-border);
+    padding: 4.4rem 5.7rem;
+    border-radius:var(--default-border-radius);
+    position: relative;
+   
+}
+
+.formularLogin h2{
+    max-width: 43rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #000;
+}
+
+.formularLogin {
+    
+}
+
+.formularLogin button{
+    text-decoration: none;
+    border-radius: 1.2rem;
+    font-size: 2.4rem;
+    height: 5.5rem;
+    background-color: #f1c40f;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.4rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.formularLogin footer p{
+    font-size: 1.4rem;
+    margin-top: 8rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.formularLogin header{
+    display: flex;
+    gap: 0  1.8rem;
+    align-items: center;
+}
+
+
+.formularLogin form{
+    margin-top: 1.6rem;
+}
+
+.formularLogin form label{
+    font-size: 1.8rem;
+    font-weight:400;
+    display: block;
+    padding: 1%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.formularLogin form input {
+    width: 586px;
+    height:5.5rem;
+    background:#fff;
+    border:var(--default-border);
+    border-radius:var(--default-border-radius);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.formularLogin form .points{
+    position:relative;
+}

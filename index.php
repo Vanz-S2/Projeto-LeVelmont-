@@ -44,8 +44,7 @@
                    
                     <li><a href="contato.php">Contato</a></li>
                 </ul>
-                <button>Login</button>
-
+                
             </nav>
         </div>
 

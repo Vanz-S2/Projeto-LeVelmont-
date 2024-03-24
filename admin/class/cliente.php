@@ -11,7 +11,6 @@ class ClienteClass
     public $dataNascCliente;
     public $telefoneCliente;
     public $enderecoCliente;
-    public $pagamentosPendentes;
     public $statusCliente;
     
    
@@ -44,7 +43,6 @@ class ClienteClass
             $this->dataNascCliente = $linha["dataNascCliente"];
             $this->telefoneCliente = $linha["telefoneCliente"];
             $this->enderecoCliente = $linha["enderecoCliente"];
-            $this->pagamentosPendentes = $linha["pagamentosPendentes"];
             $this->statusCliente = $linha["statusCliente"];
         }
     }
@@ -73,8 +71,7 @@ class ClienteClass
                     VALUES ('" . $this->nomeCliente . "',
                              '" . $this->dataNascCliente . "',
                               '" . $this->telefoneCliente . "',
-                               '" . $this->enderecoCliente . "', 
-                                '" . $this->pagamentosPendentes . "',
+                               '" . $this->enderecoCliente . "',
                                  '" . $this->statusCliente . "')";
 
         $conn = Conexao::LigarConexao();
@@ -90,7 +87,7 @@ class ClienteClass
     public function Atualizar()
 {
     $sql = "UPDATE tblcliente SET nomeCliente = '".$this->nomeCliente."', dataNascCliente = '".$this->dataNascCliente."', telefoneCliente = '".$this->telefoneCliente."',
-     enderecoCliente = '".$this->enderecoCliente."', pagamentosPendentes = '".$this->pagamentosPendentes."', statusCliente = '".$this->statusCliente."'
+     enderecoCliente = '".$this->enderecoCliente."', statusCliente = '".$this->statusCliente."'
      WHERE idCliente = '".$this->idCliente."';";
     $connect = Conexao::LigarConexao();
     $connect->exec($sql);

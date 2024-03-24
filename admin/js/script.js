@@ -95,30 +95,8 @@ function isNumber(evt) {
 
 
  
- 
-function filtrarTabela() {
-  var tipoSelecionado = document.getElementById('tipoProduto').value.toLowerCase();
-  var categoriaSelecionada = document.getElementById('categoriaProduto').value.toLowerCase();
-  var statusSelecionado = document.getElementById('statusProduto').value.toLowerCase();
-  var filtro = document.getElementById('pesquisa').value.toLowerCase();
-  var linhas = document.getElementById('tabela').getElementsByTagName('tbody')[0].getElementsByTagName('tr');
- 
-  for (var i = 0; i < linhas.length; i++) {
-      var linha = linhas[i];
-      var celulas = linha.getElementsByTagName('td');
-      if (celulas.length >= 8) { // Certifique-se de que há pelo menos 8 células
-          var texto = celulas[2].textContent || celulas[2].innerText;
-          var tipo = celulas[3].textContent || celulas[3].innerText;
-          var categoria = celulas[4].textContent || celulas[4].innerText;
-          var status = celulas[7].textContent || celulas[7].innerText; // Use a célula correta
-          if ((texto.toLowerCase().indexOf(filtro) > -1) && (tipo.toLowerCase().indexOf(tipoSelecionado) > -1) && (categoria.toLowerCase().indexOf(categoriaSelecionada) > -1) && (status.toLowerCase().indexOf(statusSelecionado) > -1)) {
-              linha.style.display = "";
-          } else {
-              linha.style.display = "none";
-          }
-      }
-  }
-}
+
+
 
 
 
@@ -161,4 +139,5 @@ function calcularLucroDia() {
 }
 
  
+
 

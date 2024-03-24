@@ -18,21 +18,21 @@ if (isset($_POST['email'])) {
     $fone   = $_POST['fone'];
     $mens   = $_POST['mens'];
 
-    $assunto = 'Site Academia Viva Bem';
+    $assunto = 'Site Pizzaria Le Velmont';
 
     echo $nome;
     echo $email;
     echo $fone;
     echo $mens;
-    
+
     require_once('admin/class/contato.php');
 
     $contato = new ContatoClass();
 
-    $contato -> nomeContato = $nome;
-    $contato -> emailContato = $email;
-    $contato -> telefoneContato = $fone;
-    $contato -> mensagemContato = $mens;
+    $contato->nomeContato = $nome;
+    $contato->emailContato = $email;
+    $contato->telefoneContato = $fone;
+    $contato->mensagemContato = $mens;
 
     $contato->Inserir();
 
@@ -58,7 +58,7 @@ if (isset($_POST['email'])) {
         $mail->Port       = 465;                                    //Porta TCP para conexão
 
         //Destinatários
-        $mail->setFrom('vivabem@ti21.smpsistema.com.br', $assunto);  // Quem dispara o email
+        $mail->setFrom('levelmont.smpsistema.com.br', $assunto);  // Quem dispara o email
         $mail->addAddress('gabrielvanzelli@outlook.com');        //Adicionar um destinatário
 
 
@@ -137,9 +137,7 @@ if (isset($_POST['email'])) {
                     <li><a href="index.php">HOME</a></li>
                     <li><a href="promocao.php">Promoções</a></li>
                     <li><a href="cardapio.php">Cardapio</a></li>
-                    <li><a href="#">Quem somos</a></li>
                 </ul>
-                <button>Login</button>
 
             </nav>
         </div>
@@ -154,70 +152,95 @@ if (isset($_POST['email'])) {
     <!--Começo do Contato-->
     <section class="contato">
 
-            <div class="site">
-                 <!--Faça seu Pedido -->
-                <h2>Contato</h2>
+        <div class="site">
+            <!--Faça seu Pedido -->
+            <h2>Contato</h2>
 
 
-                <h4>
-                    <?php
-                    if ($ok == 1) {
-                        echo $nome . ", sua mensagem foi enviada com sucesso.";
-                    } else if ($ok == 2) {
-                        echo $nome . ", não foi possível enviar sua mensagem. Tente mais tarde.";
-                    }
+            <h4>
+                <?php
+                if ($ok == 1) {
+                    echo $nome . ", sua mensagem foi enviada com sucesso.";
+                } else if ($ok == 2) {
+                    echo $nome . ", não foi possível enviar sua mensagem. Tente mais tarde.";
+                }
 
-                    ?>
-                </h4>
+                ?>
+            </h4>
 
 
-                <div>
-                    <form action="#" method="POST">
+            <div>
+                <form action="#" method="POST">
+                    <div>
                         <div>
-                            <div>
-                                <label for="nome">Nome:</label>
-                                <input type="text" name="nome" id="nome" placeholder=" *Informe seu nome:" required>
-                            </div>
-                            <div>
-                                 <!--Endereço-->
-                                <label for="email">:</label>
-                                <input type="email" name="email" id="email" placeholder="*Informe o seu E-mail:" required>
-                            </div>
-                            <div>
-                                <label for="fone">Telefone:</label>
-                                <input type="tel" name="fone" id="fone" placeholder="*Infome seu Telefone:">
-                            </div>
-
-
+                            <label for="nome">Nome:</label>
+                            <input type="text" name="nome" id="nome" placeholder=" *Informe seu nome:" required>
+                        </div>
+                        <div>
+                            <!--Endereço-->
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="*Informe o seu E-mail:" required>
+                        </div>
+                        <div>
+                            <label for="fone">Telefone:</label>
+                            <input type="tel" name="fone" id="fone" placeholder="*Infome seu Telefone:">
                         </div>
 
+
+                    
+
                         <div>
-
-                            <div>
-                                 <!--Seu Pedido-->
-                                <label for="mens">Mensagem:</label>
-                                <textarea name="mens" id="mens" cols="30" rows="10"></textarea>
-                            </div>
-
-                            <div class="btnContato">
-                                <input type="submit" value="Enviar por e-mail">  <!--butao limpar  -->
-                                <input type="button" value="Enviar po WhatsApp" ondblclick= "enviarWhats()">
-                            </div>
+                            <!--Seu Pedido-->
+                            <label for="mens">Mensagem:</label>
+                            <textarea name="mens" id="mens" cols="30" rows="10"></textarea>
                         </div>
 
-                    </form>
+                        <div class="btnContato">
+                            <input type="submit" value="Enviar por e-mail"> <!--butao limpar  -->
+                            <input type="button" value="Enviar po WhatsApp" ondblclick="enviarWhats()">
+                        </div>
+                    </div>
 
-                </div>
+                    <div>
+                        <!--Tire suas duvidas / Enviar por e-mail -->
 
+
+
+                        <h2 class="h2cont">Perguntas Frequentes</h2>
+
+                        <dl class="faq">
+                            <dt>1. Quais são os tamanhos de pizza que vocês oferecem?</dt>
+                            <dd>Oferecemos pizzas nos tamanhos pequeno (8"), médio (12") e grande (16").</dd>
+
+                            <dt>2. Vocês têm opções de pizza vegetariana ou vegana?</dt>
+                            <dd>Sim, temos uma variedade de opções vegetarianas e veganas em nosso cardápio. Por favor, consulte nossas opções específicas.</dd>
+
+                            <dt>3. Quanto tempo demora para preparar e assar uma pizza?</dt>
+                            <dd>O tempo de preparo e cozimento varia de acordo com o tamanho e o tipo de pizza, mas geralmente leva de 10 a 15 minutos.</dd>
+
+                            <dt>4. Quais são os ingredientes da pizza [nome da pizza específica]?</dt>
+                            <dd>Os ingredientes específicos de cada pizza estão listados em nosso cardápio. Por favor, consulte o cardápio para obter detalhes.</dd>
+
+                            <dt>5. Vocês entregam? Qual é a área de entrega e qual o custo?</dt>
+                            <dd>Sim, oferecemos serviço de entrega. A área de entrega e o custo variam. Por favor, entre em contato conosco ou veri
+                        </dl>
+
+                                  
+                    </div>
+
+                </form>
+                
             </div>
 
-            </div>
-        </section>
+        </div>
 
-        <!--Fim do Contato-->
-        <section class="maps">
+        </div>
+    </section>
+
+    <!--Fim do Contato-->
+    <section class="maps">
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.9929657354232!2d-46.37983302385577!3d-23.496762859223697!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce635f4f16087d%3A0x3c590eda4222c49!2sAv.%20Dr.%20Almiro%20Leal%20da%20Costa%2C%20631%20-%20Parque%20Santa%20Am%C3%A9lia%2C%20S%C3%A3o%20Paulo%20-%20SP%2C%2008122-260!5e0!3m2!1spt-BR!2sbr!4v1698553842623!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-</section>
+    </section>
 
 
 
@@ -233,6 +256,20 @@ if (isset($_POST['email'])) {
     <script src="js/wow.min.js"></script>
 
     <script src="js/animacao.js"></script> <!--Animações do java-->
+
+    <script>
+        // Adiciona evento de clique para cada dt
+        document.querySelectorAll('.faq dt').forEach(item => {
+            item.addEventListener('click', event => {
+                // Remove a classe 'active' de todos os dts
+                document.querySelectorAll('.faq dt').forEach(item => {
+                    item.classList.remove('active');
+                });
+                // Adiciona a classe 'active' apenas ao dt clicado
+                event.target.classList.add('active');
+            });
+        });
+    </script>
 
 
 

@@ -66,13 +66,13 @@ $lista = $produto->Listar();
 
     </div>
 
+    <div class="table-wrapper">
     <table id="tabela" class="table table-bordered border-primary table-striped">
 
 
         <thead>
             <tr class="tabela-titulo">
                 <th>ID</th>
-                <th>Foto</th>
                 <th>Nome</th>
                 <th>Tipo</th>
                 <th>Categoria</th>
@@ -94,9 +94,9 @@ $lista = $produto->Listar();
                         <?php echo $linha['idProduto'] ?>
                     </td>
 
-                    <td>
-                        <img src="../img/<?php echo $linha['fotoProduto'] ?>" alt="<?php echo $linha['nomeProduto'] ?>">
-                    </td>
+                    <!-- <td>
+                        <img src="../img/<?php //echo $linha['fotoProduto'] ?>" alt="<?php //echo $linha['nomeProduto'] ?>">
+                    </td> -->
 
                     <td>
                         <?php echo $linha['nomeProduto'] ?>
@@ -151,5 +151,80 @@ $lista = $produto->Listar();
         </tbody>
 
     </table>
-
+ </div>
 </div>
+
+<script>
+    function filtrarTabela() {
+        var input, filter, table, tr, td, i, j;
+        input = document.getElementById("pesquisa");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("tabela");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td");
+            for (j = 0; j < td.length; j++) {
+                let cell = td[j];
+                if (cell) {
+                    if (cell.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                        tr[i].style.display = "";
+                        break;
+                    } else {
+                        tr[i].style.display = "none";
+                    }
+                }
+            }
+        }
+    }
+
+    function filtrarPorTipo() {
+        var tipoSelecionado, table, tr, td, i, j;
+        tipoSelecionado = document.getElementById("tipoProduto").value.toUpperCase();
+        table = document.getElementById("tabela");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[2]; // Índice 2 para a coluna do tipo do produto
+            if (td) {
+                if (td.innerHTML.toUpperCase() === tipoSelecionado || tipoSelecionado === '') {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+    function filtrarPorCategoria() {
+        var categoriaSelecionada, table, tr, td, i, j;
+        categoriaSelecionada = document.getElementById("categoriaProduto").value.toUpperCase();
+        table = document.getElementById("tabela");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[3]; // Índice 3 para a coluna da categoria do produto
+            if (td) {
+                if (td.innerHTML.toUpperCase() === categoriaSelecionada || categoriaSelecionada === '') {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+
+    function filtrarPorStatus() {
+        var statusSelecionado, table, tr, td, i, j;
+        statusSelecionado = document.getElementById("statusProduto").value.toUpperCase();
+        table = document.getElementById("tabela");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[6]; // Índice 6 para a coluna do status do produto
+            if (td) {
+                if (td.innerHTML.toUpperCase() === statusSelecionado || statusSelecionado === '') {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>

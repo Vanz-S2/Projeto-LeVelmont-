@@ -118,6 +118,27 @@ function EnviarWhats (){
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Cardapio
 
 function showMenu(menuId) {
@@ -132,173 +153,359 @@ function showMenu(menuId) {
       name: "Grandes",
       items: [
         {
-          name: "Pizza de Calabresa",
+          name: "Calabresa",
           description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
           price: "$55.00",
           image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
+          name: "Margherita",
           description: "Molho de tomate, muçarela, manjericão fresco.",
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Calabresa",
-          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          name: "A moda do Le Velmont",
+          description: "Mussarela,escarola,catupiry,bacon e calabresa",
           price: "$55.00",
           image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "Atum",
+          description: "Atum e cebola",
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
 
 
         {
-          name: "Pizza de Calabresa",
-          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          name: "Atum 2",
+          description: "Atum,cebola e tomate",
           price: "$55.00",
           image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "A Moda do Chefe",
+          description: "Atum,champignon,mussarela,salpicada com bacon",
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
         {
-          name: "Pizza de Calabresa",
-          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          name: "Bacon",
+          description: "Bacon,cebola e mussarela",
           price: "$55.00",
           image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "Frango",
+          description: "Frango e catupiry",
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Calabresa",
-          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          name: "Frango 2",
+          description: "Frango e mussarela",
           price: "$55.00",
           image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "Frango Especial",
+          description: "Frango,catupiry e Batata palha",
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
 
 
         {
-          name: "Pizza de Calabresa",
-          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          name: "Baiacatu",
+          description: "Calabresa moida com catupiry",
           price: "$55.00",
           image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "Brasileira",
+          description: "Palmito, milho verde, mussarela e bacon",
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
         {
-          name: "Pizza de Calabresa",
-          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          name: "Portuguesa",
+          description: "Presunto, ovos cozidos, ervilha, cebola e mussarela",
           price: "$55.00",
           image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "Portuguesa 2",
+          description: "Pesunto, ovos cozidos, milho verde, cebola e catupiry",
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Calabresa",
-          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          name: "2 Queijos",
+          description: "mussarela e catupiry",
           price: "$55.00",
           image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "Milho verde",
+          description: "milho verde e catupiry",
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
 
 
         {
-          name: "Pizza de Calabresa",
-          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          name: "Milho verde 2",
+          description: "milho verde e mussarela",
           price: "$55.00",
           image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "Francesa",
+          description: "pesunto, ovos cozidos, catupiry e mussarela",
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
         {
-          name: "Pizza de Calabresa",
-          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          name: "Lombo Canadense",
+          description: "lombo canadense, cebola e catupiry",
           price: "$55.00",
           image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "Peito de peru",
+          description: "peito de peru e catupiry",
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Calabresa",
-          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          name: "Palmito",
+          description: "palmito, cebola e mussarela",
           price: "$55.00",
           image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "Atum especial",
+          description: "atum, cebola, milho verde e mussarela",
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
 
 
         {
-          name: "Pizza de Calabresa",
-          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          name: "Chilena",
+          description: "Calabresa fatiada, cebola e mussarela",
           price: "$55.00",
           image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "Escarola",
+          description: "escarola refogada, bacon, cebola e mussarela",
           price: "$55.00",
           image: "img/imagem/pizza-2.jpg",
         },
+
+
+
+        {
+          name: "Brocolis",
+          description: "Brocolis, catupiry, mussarela e bacon",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Abobrinha",
+          description: "mussarela, abobrinha e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Beringela",
+          description: "beringela, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Mussarela c/alho",
+          description: "mussarela e alho",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Mussarela",
+          description: "mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Carne seca",
+          description: "carne seca refogada coberta com mussarela de bufala",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Calabacon",
+          description: "calabresa, bacon e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "La Grasa",
+          description: "frango, bacon, catupiry e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Catupiry",
+          description: "catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Baiana",
+          description: "calabesa moida, ovos cozidos, pimenta e cebola",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        
+        {
+          name: "Baiana 2",
+          description: "calabesa moida, ovos cozidos, tomate, pimenta e cebola",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Toscana",
+          description: "calabesa moida, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Peperone",
+          description: "peperone, mussarela e parmesão",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Castelone",
+          description: "mussarela, calabresa frita, cebolinha e salsinha",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "4 Queijo",
+          description: "catupiry, mussarela, provolone e gorgonzola",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "5 Queijo",
+          description: "catupiry, mussarela, provolone, parmesão, (opção) gorgonzola ou cheddar",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "3 Queijos",
+          description: "catupiry, mussarela e parmesão",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Bauru",
+          description: "presunto, rodela de tomate e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Napolitana",
+          description: "mussarela, rodela de tomate gratinado com parmesão",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Caipira",
+          description: "frango, milho verde e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Rucula",
+          description: "mussarela de bufala, tomate seco e rucula",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Alho e oleo",
+          description: "Alho e oleo",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Caprezi",
+          description: "mussarela de bufala e tomate seco",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Siciliana",
+          description: "bacon, cebola, champignon coberto com catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza do Alemão",
+          description: "brocolis, palmito, mussarela, tomate seco e manjericão",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Ge & Lu",
+          description: "Borda recheada de mussarela e presunto, recheada com alho poró, e mussarela salpicada com bacon",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+       
 
 
         // Adicione mais 9 itens com nome, descrição, preço e imagem
@@ -316,144 +523,359 @@ function showMenu(menuId) {
       name: "Médias",
       items: [
         {
-          name: "Pizza Margherita",
+          name: "Calabresa",
+          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          price: "$45.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Margherita",
           description: "Molho de tomate, muçarela, manjericão fresco.",
           price: "$45.00",
           image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "A moda do Le Velmont",
+          description: "Mussarela,escarola,catupiry,bacon e calabresa",
           price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
-          price: "$45.00",
-          image: "img/imagem/pizza-2.jpg",
-        },
-
-        {
-          name: "Pizza Margherita",
-          description: "Molho de tomate, muçarela, manjericão fresco.",
+          name: "Atum",
+          description: "Atum e cebola",
           price: "$45.00",
           image: "img/imagem/pizza-2.jpg",
         },
 
 
-        // Adicione mais 9 itens com nome, descrição, preço e imagem
+        {
+          name: "Atum 2",
+          description: "Atum,cebola e tomate",
+          price: "$45.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "A Moda do Chefe",
+          description: "Atum,champignon,mussarela,salpicada com bacon",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        {
+          name: "Bacon",
+          description: "Bacon,cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Frango",
+          description: "Frango e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Frango 2",
+          description: "Frango e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Frango Especial",
+          description: "Frango,catupiry e Batata palha",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+
+        {
+          name: "Baiacatu",
+          description: "Calabresa moida com catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Brasileira",
+          description: "Palmito, milho verde, mussarela e bacon",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        {
+          name: "Portuguesa",
+          description: "Presunto, ovos cozidos, ervilha, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Portuguesa 2",
+          description: "Pesunto, ovos cozidos, milho verde, cebola e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "2 Queijos",
+          description: "mussarela e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Milho verde",
+          description: "milho verde e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+
+        {
+          name: "Milho verde 2",
+          description: "milho verde e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Francesa",
+          description: "pesunto, ovos cozidos, catupiry e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        {
+          name: "Lombo Canadense",
+          description: "lombo canadense, cebola e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Peito de peru",
+          description: "peito de peru e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Palmito",
+          description: "palmito, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Atum especial",
+          description: "atum, cebola, milho verde e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+
+        {
+          name: "Chilena",
+          description: "Calabresa fatiada, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Escarola",
+          description: "escarola refogada, bacon, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+
+
+        {
+          name: "Brocolis",
+          description: "Brocolis, catupiry, mussarela e bacon",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Abobrinha",
+          description: "mussarela, abobrinha e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Beringela",
+          description: "beringela, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Mussarela c/alho",
+          description: "mussarela e alho",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Mussarela",
+          description: "mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Carne seca",
+          description: "carne seca refogada coberta com mussarela de bufala",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Calabacon",
+          description: "calabresa, bacon e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "La Grasa",
+          description: "frango, bacon, catupiry e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Catupiry",
+          description: "catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Baiana",
+          description: "calabesa moida, ovos cozidos, pimenta e cebola",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        
+        {
+          name: "Baiana 2",
+          description: "calabesa moida, ovos cozidos, tomate, pimenta e cebola",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Toscana",
+          description: "calabesa moida, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Peperone",
+          description: "peperone, mussarela e parmesão",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Castelone",
+          description: "mussarela, calabresa frita, cebolinha e salsinha",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "4 Queijo",
+          description: "catupiry, mussarela, provolone e gorgonzola",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "5 Queijo",
+          description: "catupiry, mussarela, provolone, parmesão, (opção) gorgonzola ou cheddar",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "3 Queijos",
+          description: "catupiry, mussarela e parmesão",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Bauru",
+          description: "presunto, rodela de tomate e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Napolitana",
+          description: "mussarela, rodela de tomate gratinado com parmesão",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Caipira",
+          description: "frango, milho verde e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Rucula",
+          description: "mussarela de bufala, tomate seco e rucula",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Alho e oleo",
+          description: "Alho e oleo",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Caprezi",
+          description: "mussarela de bufala e tomate seco",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Siciliana",
+          description: "bacon, cebola, champignon coberto com catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Pizza do Alemão",
+          description: "brocolis, palmito, mussarela, tomate seco e manjericão",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Ge & Lu",
+          description: "Borda recheada de mussarela e presunto, recheada com alho poró, e mussarela salpicada com bacon",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        // SEGUIR O MESMO PADRÃO PARA ADICIONAR NOVOS PRODUTOS
       ],
     },
 
@@ -463,171 +885,356 @@ function showMenu(menuId) {
       name: "Broto",
       items: [
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Calabresa",
+          description: "Molho de tomate, muçarela, calabresa, cebola, pimentão.",
+          price: "$45.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Margherita",
+          description: "Molho de tomate, muçarela, manjericão fresco.",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "A moda do Le Velmont",
+          description: "Mussarela,escarola,catupiry,bacon e calabresa",
+          price: "$45.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Atum",
+          description: "Atum e cebola",
+          price: "$45.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+
+        {
+          name: "Atum 2",
+          description: "Atum,cebola e tomate",
+          price: "$45.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "A Moda do Chefe",
+          description: "Atum,champignon,mussarela,salpicada com bacon",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        {
+          name: "Bacon",
+          description: "Bacon,cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Frango",
+          description: "Frango e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Frango 2",
+          description: "Frango e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Frango Especial",
+          description: "Frango,catupiry e Batata palha",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+
+        {
+          name: "Baiacatu",
+          description: "Calabresa moida com catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Brasileira",
+          description: "Palmito, milho verde, mussarela e bacon",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        {
+          name: "Portuguesa",
+          description: "Presunto, ovos cozidos, ervilha, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Portuguesa 2",
+          description: "Pesunto, ovos cozidos, milho verde, cebola e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "2 Queijos",
+          description: "mussarela e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Milho verde",
+          description: "milho verde e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+
+        {
+          name: "Milho verde 2",
+          description: "milho verde e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Francesa",
+          description: "pesunto, ovos cozidos, catupiry e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+        {
+          name: "Lombo Canadense",
+          description: "lombo canadense, cebola e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Peito de peru",
+          description: "peito de peru e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Palmito",
+          description: "palmito, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Atum especial",
+          description: "atum, cebola, milho verde e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+
+        {
+          name: "Chilena",
+          description: "Calabresa fatiada, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-1.jpg", // Adicione o nome da imagem
+        },
+
+        {
+          name: "Escarola",
+          description: "escarola refogada, bacon, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+
+
+        {
+          name: "Brocolis",
+          description: "Brocolis, catupiry, mussarela e bacon",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Abobrinha",
+          description: "mussarela, abobrinha e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Beringela",
+          description: "beringela, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Mussarela c/alho",
+          description: "mussarela e alho",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Mussarela",
+          description: "mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Carne seca",
+          description: "carne seca refogada coberta com mussarela de bufala",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Calabacon",
+          description: "calabresa, bacon e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "La Grasa",
+          description: "frango, bacon, catupiry e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Catupiry",
+          description: "catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
+        },
+
+        {
+          name: "Baiana",
+          description: "calabesa moida, ovos cozidos, pimenta e cebola",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
         
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Baiana 2",
+          description: "calabesa moida, ovos cozidos, tomate, pimenta e cebola",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Toscana",
+          description: "calabesa moida, cebola e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Peperone",
+          description: "peperone, mussarela e parmesão",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Castelone",
+          description: "mussarela, calabresa frita, cebolinha e salsinha",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "4 Queijo",
+          description: "catupiry, mussarela, provolone e gorgonzola",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "5 Queijo",
+          description: "catupiry, mussarela, provolone, parmesão, (opção) gorgonzola ou cheddar",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "3 Queijos",
+          description: "catupiry, mussarela e parmesão",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Bauru",
+          description: "presunto, rodela de tomate e mussarela",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Napolitana",
+          description: "mussarela, rodela de tomate gratinado com parmesão",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Caipira",
+          description: "frango, milho verde e catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Rucula",
+          description: "mussarela de bufala, tomate seco e rucula",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Alho e oleo",
+          description: "Alho e oleo",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Caprezi",
+          description: "mussarela de bufala e tomate seco",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Siciliana",
+          description: "bacon, cebola, champignon coberto com catupiry",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Pizza do Alemão",
+          description: "brocolis, palmito, mussarela, tomate seco e manjericão",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
 
         {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
-        },
-
-        {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
-        },
-
-        {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
-        },
-
-        {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
-        },
-
-        {
-          name: "Pizza de Frango",
-          description: "Molho de tomate, frango desfiado, milho, catupiry.",
-          price: "$35.00",
-          image: "img/imagem/pizza-1.jpg",
+          name: "Ge & Lu",
+          description: "Borda recheada de mussarela e presunto, recheada com alho poró, e mussarela salpicada com bacon",
+          price: "$55.00",
+          image: "img/imagem/pizza-2.jpg",
         },
         
         // SEGUIR O MESMO PADRÃO PARA ADICIONAR NOVOS PRODUTOS
@@ -843,7 +1450,7 @@ function showMenu(menuId) {
         },
 
 
-        // Adicione mais 9 itens com nome, descrição, preço e imagem
+        // SEGUIR O MESMO PADRÃO PARA ADICIONAR NOVOS PRODUTOS
       ],
     },
 

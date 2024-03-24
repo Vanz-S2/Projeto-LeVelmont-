@@ -106,7 +106,7 @@ $pagina = @$_GET['p'];
 
                             //Vendas
                         case 'vendas':
-                            require_once("venda/venda.php");
+                            echo 'pagamento,itensvenda e venda. Confirmar de como vai funcionar.';
                             break;
 
                             //Pagamentos
