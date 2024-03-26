@@ -7,8 +7,8 @@ class Conexao
     public static function LigarConexao()
     {
         
-             $conn = new PDO('mysql:dbname=dblevelmont;host=localhost', 'root', '');
-            //$conn = new PDO('mysql:dbname=u283879542_levelmont;host=smpsistema.com.br', 'u283879542_levelmont', 'SenacLeVelmont01');
+             //$conn = new PDO('mysql:dbname=dblevelmont;host=localhost', 'root', '');
+            $conn = new PDO('mysql:dbname=u283879542_levelmont;host=smpsistema.com.br', 'u283879542_levelmont', 'SenacLeVelmont01');
             
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
             return $conn;

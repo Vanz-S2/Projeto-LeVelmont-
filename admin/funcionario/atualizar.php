@@ -17,6 +17,7 @@ if (isset($_POST['nomeFuncionario'])) {
     $funcaoFuncionario = $_POST['funcaoFuncionario'];
     $acessoFuncionario = $_POST['acessoFuncionario'];
     $statusFuncionario = $_POST['statusFuncionario'];
+    $senhaFuncionario = $_POST['senhaFuncionario'];
 
 
 
@@ -29,6 +30,7 @@ if (isset($_POST['nomeFuncionario'])) {
     $funcionario->funcaoFuncionario = $funcaoFuncionario;
     $funcionario->acessoFuncionario = $acessoFuncionario;
     $funcionario->statusFuncionario = $statusFuncionario;
+    $funcionario->senhaFuncionario = $senhaFuncionario;
 
     $funcionario->Atualizar();
 }
@@ -71,6 +73,11 @@ if (isset($_POST['nomeFuncionario'])) {
             <input type="text" class="form-control" name="cpfFuncionario" id="cpfFuncionario" placeholder="CPF do Funcionário" value="<?php echo $funcionario->cpfFuncionario ?>">
         </div>
 
+
+        <div class="mb-3">
+                <label for="senhaFuncionario" class="form-label">Senha:</label>
+                <input type="text" class="form-control" name="senhaFuncionario" id="senhaFuncionario" placeholder="Senha do Funcionário" value="<?php echo $funcionario->senhaFuncionario ?>">
+            </div>
 
 
         <div class="row">

@@ -42,6 +42,7 @@ $lista = $funcionario->Listar();
                 <th>Turno</th>
                 <th>Função</th>
                 <th>Acesso</th>
+                <th>Senha</th>
                 <th>Status</th>
                 <th>Atualizar</th>  
                 <th>Desativar</th>
@@ -88,6 +89,10 @@ $lista = $funcionario->Listar();
 
                     <td>
                         <?php echo $linha['acessoFuncionario'] ?>
+                    </td>
+
+                    <td>
+                        <?php echo $linha['senhaFuncionario'] ?>
                     </td>
 
                     <td>

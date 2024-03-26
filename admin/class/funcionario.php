@@ -78,7 +78,8 @@ class FuncionarioClass
                                             turnoFuncionario,
                                             funcaoFuncionario,
                                             acessoFuncionario,
-                                            statusFuncionario)
+                                            statusFuncionario,
+                                            senhaFuncionario)
                     VALUES ('" . $this->nomeFuncionario . "',
                              '" . $this->dataNascFuncionario . "',
                               '" . $this->cpfFuncionario . "',
@@ -87,7 +88,8 @@ class FuncionarioClass
                                 '" . $this->turnoFuncionario . "',
                                  '" . $this->funcaoFuncionario . "',
                                  '" . $this->acessoFuncionario . "',
-                                 '" . $this->statusFuncionario . "')";
+                                 '" . $this->statusFuncionario . "',
+                                 '" . $this->senhaFuncionario . "')";
 
         $conn = Conexao::LigarConexao();
         $conn->exec($query);
@@ -100,7 +102,10 @@ class FuncionarioClass
     //Atualizar
     public function Atualizar()
     {
-        $sql = "UPDATE tblfuncionario SET nomeFuncionario = '".$this->nomeFuncionario."', dataNascFuncionario = '".$this->dataNascFuncionario."',cpfFuncionario = '".$this->cpfFuncionario."', telefoneFuncionario = '" .$this->telefoneFuncionario."',emailFuncionario = '" .$this->emailFuncionario."',turnoFuncionario = '" .$this->turnoFuncionario."', funcaoFuncionario = '" .$this->funcaoFuncionario."',acessoFuncionario = '" .$this->acessoFuncionario."',statusFuncionario = '" .$this->statusFuncionario."'
+        $sql = "UPDATE tblfuncionario SET nomeFuncionario = '".$this->nomeFuncionario."', dataNascFuncionario = '".$this->dataNascFuncionario."',cpfFuncionario = '".$this->cpfFuncionario."',
+         telefoneFuncionario = '" .$this->telefoneFuncionario."',emailFuncionario = '" .$this->emailFuncionario."',
+         turnoFuncionario = '" .$this->turnoFuncionario."', funcaoFuncionario = '" .$this->funcaoFuncionario."',acessoFuncionario = '" .$this->acessoFuncionario."',
+         statusFuncionario = '" .$this->statusFuncionario."',senhaFuncionario = '" .$this->senhaFuncionario."'
          WHERE idFuncionario = '".$this->idFuncionario."';";
         $connect = Conexao::LigarConexao();
         $connect->exec($sql);

@@ -11,6 +11,7 @@ if (isset($_POST['nomeFuncionario'])) {
     $funcaoFuncionario = $_POST['funcaoFuncionario'];
     $acessoFuncionario = $_POST['acessoFuncionario'];
     $statusFuncionario = $_POST['statusFuncionario'];
+    $senhaFuncionario = $_POST['senhaFuncionario'];
 
 
     require_once('class/funcionario.php');
@@ -26,6 +27,7 @@ if (isset($_POST['nomeFuncionario'])) {
     $funcionario->funcaoFuncionario = $funcaoFuncionario;
     $funcionario->acessoFuncionario = $acessoFuncionario;
     $funcionario->statusFuncionario = $statusFuncionario;
+    $funcionario->senhaFuncionario = $senhaFuncionario;
 
     $funcionario->Cadastrar();
 }
@@ -46,7 +48,8 @@ if (empty($_POST["nomeFuncionario"])) {
     }
 }
 
-function test_input($data) {
+function test_input($data)
+{
     $data = trim($data);
     $data = stripslashes($data);
     $data = htmlspecialchars($data);
@@ -74,7 +77,7 @@ function test_input($data) {
 
     <div class="nome-exercicio">
         <div class="mb-3">
-            <label for="nomeFuncionario" class="form-label" >Nome:</label>
+            <label for="nomeFuncionario" class="form-label">Nome:</label>
             <input type="text" class="form-control" name="nomeFuncionario" id="nomeFuncionario" placeholder="Nome do Funcionário" required>
 
         </div>
@@ -92,8 +95,8 @@ function test_input($data) {
 
         </div>
 
-         
-    
+
+
 
 
         <div class="mb-3">
@@ -111,6 +114,11 @@ function test_input($data) {
                 <input type="date" class="form-control" id="dataNascFuncionario" name="dataNascFuncionário" required>
             </div>
 
+
+            <div class="mb-3">
+                <label for="senhaFuncionario" class="form-label">Senha:</label>
+                <input type="text" class="form-control" name="senhaFuncionario" id="senhaFuncionario" placeholder="Senha do Funcionário" required>
+            </div>
 
 
             <div class="mb-3">
@@ -173,7 +181,7 @@ function test_input($data) {
                     <div class="form-check">
                         <input class="form-check-input" type="radio" name="statusFuncionario" id="statusFuncionario" value="DESATIVADO">
                         <label class="form-check-label">
-                        DESATIVADO
+                            DESATIVADO
                         </label>
                     </div>
 
