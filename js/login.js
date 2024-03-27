@@ -20,7 +20,9 @@ function carregarLogin() {
              $('#msgLogin').html( '<div class="msgSuccess">'+ data.message+'</div>');
   
              var idFuncionario = data.idFuncionario; //FAZ REFERÊNCIA COM O BANCO DE DADOS
-             window.location.href = 'http://localhost/pizzaria/admin/index.php?p=dashboard'; // DIRECIONA PARA O DASHBOARD
+             
+             //window.location.href = 'http://localhost/pizzaria/admin/index.php?p=dashboard'; // DIRECIONA PARA O DASHBOARD
+             window.location.href = 'https://levelmont.smpsistema.com.br/admin/'; // DIRECIONA PARA O DASHBOARD
            }
            else{
             //LOGIN INVÁLIDO

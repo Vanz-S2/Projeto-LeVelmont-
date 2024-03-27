@@ -85,7 +85,7 @@ function test_input($data)
 
         <div class="mb-3">
             <label for="emailFuncionario" class="form-label">E-mail:</label>
-            <input type="text" class="form-control" name="emailFuncionario" id="emailFuncionario" placeholder="E-mail do Funcionário" required>
+            <input type="e-mail" class="form-control" name="emailFuncionario" id="emailFuncionario" placeholder="E-mail do Funcionário" required>
         </div>
 
 
@@ -111,7 +111,7 @@ function test_input($data)
 
             <div class="mb-3">
                 <label for="dataNascFuncionario">Data de nascimento:</label><br>
-                <input type="date" class="form-control" id="dataNascFuncionario" name="dataNascFuncionário" required>
+                <input type="date" class="form-control" id="dataNascFuncionario" name="dataNascFuncionario" required>
             </div>
 
 

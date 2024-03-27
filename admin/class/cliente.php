@@ -66,7 +66,6 @@ class ClienteClass
                                             dataNascCliente,
                                             telefoneCliente,
                                             enderecoCliente,
-                                            pagamentosPendentes,
                                             statusCliente)
                     VALUES ('" . $this->nomeCliente . "',
                              '" . $this->dataNascCliente . "',
